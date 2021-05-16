@@ -1,0 +1,15 @@
+.page-header {
+  outline: 2px solid red;
+}
+
+.page-header__top-wrapper {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+}
+
+.page-header__bottom-wrapper {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid $layout-white-darker;
+}

@@ -1,30 +1,19 @@
 // Colors-layout
-$layout-darker-white: #f2f2f2;
-$layout-dark-white: #fafafa;
 $layout-white: #ffffff;
+$layout-white-darker: #f6f5f4;
+$layout-black-lighter: #1d1613;
 $layout-black: #000000;
-$layout-light-black: #1b2d37;
-$layout-lighter-black: #203c42;
-$layout-blue: #00b2ff;
-$layout-darker-grey: #353735;
-$layout-grey: #666666;
-$layout-light-grey: #788891;
-$layout-lighter-grey: #cdcdcd;
+$layout-grey-lighter: #f0eae4;
+$layout-grey: #9b9997;
+$layout-brown: #a87b62;
 
 //My colors
-$dark-custom-grey: #c4c4c4;
-$custom-grey: #ebebeb;
-
 
 //Fonts
-$default-font: "PT Mono", "Arial", sans-serif;
-$extra-font: "Roboto Condensed", "Arial", sans-serif;
-$special-font: "Roboto", "Arial", sans-serif;
+$default-font: "Poppins", "Arial", sans-serif;
+$extra-font: "Cormorant Garamond", "Times New Roman", serif;
 
 // Viewports
 $mobile-width-only: 320px;
-$tablet-width-exception: 400px;
-$tablet-width-grid-exception: 600px;
 $tablet-width: 767px;
-$desktop-width-exeption: 1300px;
 $desktop-width: 1023px;

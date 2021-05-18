@@ -1,0 +1,34 @@
+.about-us-info {
+  outline: 2px dotted green;
+
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-basis: 350px;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media (max-width: $desktop-width) {
+    margin: 0;
+    flex-basis: 375px;
+    margin-right: 90px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin: 0;
+    flex-basis: auto;
+    flex-direction: column;
+
+    .about-us-list--middle:last-child {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.about-us-list--middle {
+  @media (max-width: $tablet-width) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}

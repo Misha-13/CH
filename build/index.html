@@ -77,23 +77,35 @@
   <header class="page-header">
     <div class="page-header__top-wrapper">
       <a class="logo">
-        <img src="img/logo.svg" alt="Логотип CH" width="66" height="66">
+        <picture>
+          <source srcset="img/logo-menu.svg" media="(max-width: 1023px)">
+          <img src="img/logo.svg" alt="Логотип CH" width="66" height="66">
+        </picture>
       </a>
       <form action="https://echo.htmlacademy.ru" method="GET" class="search">
-        <label class="visually-hidden" for="search">Поиск по сайту</label>
-        <input type="search" id="header-search" name="search" placeholder="Type here to search" class="search__bar" aria-label="Поиск по сайту">
+        <label class="visually-hidden" for="header-search">Поиск по сайту</label>
+        <input type="search" id="header-search" name="header-search" placeholder="Type here to search" aria-label="Поиск по сайту">
       </form>
+      <button class="page-header__burger-button">
+        <svg class="page-header__svg page-header__svg--burger" width="25" height="16">
+          <use xlink:href="#icon-burger"></use>
+        </svg>
+      </button>
       <div class="page-header__cart-wrapper">
         <a class="login-button" href="">Login</a>
-        <a class="cart-button" href="">Cart <span class="cart-button__counter">0</span></a>
+        <a class="cart-button" href="">
+          <svg class="page-header__svg page-header__svg--cart" width="18" height="16">
+            <use xlink:href="#icon-cart"></use>
+          </svg>
+          <p>Cart <span class="cart-button__counter"></span>0</p>
+        </a>
       </div>
     </div>
     <div class="page-header__bottom-wrapper">
       <nav class="navigation">
-        <button class="navigation__burger-button" style="display: none;">Бургер</button>
-        <form action="https://echo.htmlacademy.ru" method="GET" class="search search--tablet" style="display: none;">
+        <form action="https://echo.htmlacademy.ru" method="GET" class="search search--tablet">
           <label class="visually-hidden" for="search">Поиск по сайту</label>
-          <input type="search" id="header-search" name="search" placeholder="Type here to search" class="search__bar" aria-label="Поиск по сайту">
+          <input type="search" id="search" name="search" aria-label="Поиск по сайту">
         </form>
         <ul class="nav-list">
           <li class="nav-list__element">
@@ -112,7 +124,7 @@
             <a class="nav-list__link" href="">Earrings</a>
           </li>
         </ul>
-        <ul class="nav-list" style="display: none;">
+        <ul class="nav-list nav-list-additional">
           <li class="nav-list__element nav-list__element--additional">
             <a class="nav-list__link nav-list__link--additional" href="">About CH</a>
           </li>
@@ -123,7 +135,7 @@
             <a class="nav-list__link nav-list__link--additional" href="">Contact Us</a>
           </li>
         </ul>
-        <a style="display: none;" class="login-button login-button--tablet" href="">Login</a>
+        <a class="login-button login-button--tablet" href="">Login</a>
       </nav>
     </div>
   </header>
@@ -131,7 +143,85 @@
     <p>ddddddd</p>
   </main>
   <footer class="page-footer">
-    <p>ddddddddd</p>
+    <form action="https://echo.htmlacademy.ru" method="GET" class="subscription">
+      <label for="email">The good stuff in your inbox </label>
+      <p>News and updates from CH. No spam, we promise.</p>
+      <div class="subscription__wrapper">
+          <input type="email" id="email" name="email" placeholder="Your E-mail" class="subscription__bar" aria-label="Поиск по сайту">
+          <button class="subscription__button" type="submit">
+            <span class="subscription__button-lable">Sign Up</span>
+            <svg class="subscription__button-icon" width="29" height="9">
+                <use xlink:href="#icon-slider-arrow-right"></use>
+            </svg>
+          </button>
+      </div>
+    </form>
+    <nav class="about-us-info">
+      <ul class="about-us-list">
+        <li class="about-us-list__element">
+          <a class="about-us-list__link" href="">Ordering & Payment</a>
+        </li>
+        <li class="about-us-list__element">
+          <a class="about-us-list__link" href="">Terms & Conditions</a>
+        </li>
+        <li class="about-us-list__element">
+          <a class="about-us-list__link" href="">Returns & Exchanges</a>
+        </li>
+        <li class="about-us-list__element">
+          <a class="about-us-list__link" href="">Delivery</a>
+        </li>
+      </ul>
+      <ul class="about-us-list about-us-list--middle">
+        <li class="about-us-list__element">
+            <a class="about-us-list__link" href="">About CH</a>
+          </li>
+          <li class="about-us-list__element">
+            <a class="about-us-list__link" href="">Stores & Hours</a>
+          </li>
+          <li class="about-us-list__element">
+            <a class="about-us-list__link" href="">Jobs</a>
+          </li>
+          <li class="about-us-list__element">
+            <a class="about-us-list__link" href="">Contact Us</a>
+          </li>
+      </ul>
+    </nav>
+    <section class="socials">
+      <ul class="sm-list">
+        <li class="sm-list__element">
+          <a class="sm-list__link" href="">
+            <svg class="sm-list__svg sm-list__svg--facebook" width="8" height="15">
+              <use xlink:href="#icon-facebook"></use>
+            </svg>
+            <p>Facebook</p>
+          </a>
+        </li>
+        <li class="sm-list__element">
+          <a class="sm-list__link" href="">
+            <svg class="sm-list__svg" width="15" height="15">
+              <use xlink:href="#icon-instagram"></use>
+            </svg>
+            <p>Instagram</p>
+          </a>
+        </li>
+        <li class="sm-list__element">
+          <a class="sm-list__link" href="">
+            <svg class="sm-list__svg" width="15" height="15">
+              <use xlink:href="#icon-pinterest"></use>
+            </svg>
+            <p>Pinterest</p>
+          </a>
+        </li>
+        <li class="sm-list__element">
+            <a class="sm-list__link sm-list__svg--twitter" href="">
+              <svg class="sm-list__svg" width="15" height="13">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+              <p>Twitter</p>
+            </a>
+        </li>
+      </ul>
+    </section>
   </footer>
   <section class="modal modal--close">
 

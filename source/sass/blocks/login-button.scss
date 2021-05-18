@@ -1,0 +1,40 @@
+.login-button {
+  display: block;
+  font-family: $default-font;
+  text-decoration: none;
+  color: $layout-black-lighter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    outline: none;
+  }
+
+  &:active {
+    color: $layout-brown;
+    text-decoration: underline;
+  }
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.login-button--tablet {
+  display: none;
+
+  @media (max-width: $desktop-width) {
+    display: block;
+    font-size: 18px;
+    line-height: 23px;
+    color: $layout-white;
+
+    &:active {
+      color: $layout-black;
+      text-decoration: underline;
+    }
+  }
+}

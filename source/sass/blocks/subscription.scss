@@ -1,0 +1,128 @@
+.subscription {
+  color: $layout-white;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 500px;
+
+  label {
+    font-family: $extra-font;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 44px;
+    letter-spacing: 0.03em;
+  }
+
+  p {
+    font-family: $default-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 0;
+    margin-top: 25px;
+    margin-bottom: 54px;
+    color: $layout-grey;
+  }
+
+  input {
+    flex-grow: 1;
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+    padding-right: 110px;
+    font-family: $default-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: $layout-white;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $layout-white;
+
+    &:focus {
+      outline: none;
+      border-color: $layout-brown;
+    }
+
+    &::placeholder {
+      font-family: $default-font;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      color: $layout-grey;
+    }
+  }
+
+  @media (max-width: $desktop-width) {
+    flex-basis: 560px;
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: $tablet-width) {
+    flex-basis: auto;
+    margin-bottom: 50px;
+
+    input {
+      width: 60%;
+    }
+
+    label {
+      padding-right: 50px;
+    }
+
+    p {
+      padding-right: 50px;
+    }
+  }
+}
+
+.subscription__wrapper {
+  position: relative;
+  display: flex;
+}
+
+.subscription__button {
+  position: absolute;
+  top: 0;
+  right: -2px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: $default-font;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: $layout-white;
+
+  &:hover .subscription__button-lable {
+    color: $layout-brown;
+  }
+
+  &:hover .subscription__button-icon {
+    stroke: $layout-brown;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus .subscription__button-lable {
+    outline: none;
+    color: $layout-brown;
+    opacity: 0.7;
+  }
+
+  &:active .subscription__button-icon,
+  &:focus .subscription__button-icon {
+    outline: none;
+    stroke: $layout-brown;
+    opacity: 0.7;
+  }
+}
+
+.subscription__button-lable {
+  margin-right: 12px;
+}
+
+.subscription__button-icon {
+  stroke: $layout-white;
+}

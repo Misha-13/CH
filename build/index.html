@@ -97,7 +97,7 @@
           <svg class="page-header__svg page-header__svg--cart" width="18" height="16">
             <use xlink:href="#icon-cart"></use>
           </svg>
-          <p>Cart <span class="cart-button__counter"></span>0</p>
+          <p>Cart <span class="cart-button__counter">0</span></p>
         </a>
       </div>
     </div>
@@ -140,7 +140,260 @@
     </div>
   </header>
   <main class="page-main">
-    <p>ddddddd</p>
+    <h1 class="visually-hidden">Jewellery CH</h1>
+    <section class="promo">
+      <div class="promo__img-wrapper">
+        <div class="promo__promo-text-wrapper">
+            <h2>Perfection</h2>
+            <p>Made to be yours</p>
+        </div>
+        <picture>
+          <source srcset="img/intro-desktop.webp 1x, img/intro-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1024px)">
+          <source srcset="img/intro-tablet.webp 1x, img/intro-tablet@2x.webp 2x" media="(max-width: 1023px)" type="image/webp">
+          <source srcset="img/intro-mobil.webp 1x, img/intro-mobil@2x.webp 2x" media="(max-width: 767px)" type="image/webp">
+          <img src="img/intro-desktop.jpg" alt="Woman in jacket with jewelleries" width="1366" height="463">
+        </picture>
+      </div>
+    </section>
+    <section class="new-items">
+      <h2>New In</h2>
+      <a class="new-items__extra-link" href="">Shop Now</a>
+      <div class="swiper">
+          <div class="swiper__navigation">
+            <div class="swiper__button--previous">
+                <svg class="page-header__svg page-header__svg--burger" width="25" height="16">
+                  <use xlink:href="#icon-slider-arrow-right"></use> <!-- Нужна картинка -->
+                </svg>
+            </div>
+            <div class="swiper__button--next">
+                <svg class="page-header__svg page-header__svg--burger" width="25" height="16">
+                  <use xlink:href="#icon-slider-arrow-right"></use>
+                </svg>
+            </div>
+          </div>
+          <ul class="swiper__slides-wrapper">
+            <li class="swiper__slide">
+              <a class="swiper__slide-link" href="">
+                <article class="product-card">
+                  <h3>Necklace with amethyst</h3>
+                  <p>$ 145</p>
+                  <div class="product-card__img-wrapper">
+                    <picture>
+                      <source srcset="img/purple-gemstone-necklace.webp 1x, img/purple-gemstone-necklace@2x.webp 2x" type="image/webp">
+                      <img src="img/purple-gemstone-necklace.jpg" alt="Purple gemstone necklace" width="270" height="284">
+                    </picture>
+                  </div>
+                </article>
+              </a>
+            </li>
+            <li class="swiper__slide">
+              <a class="swiper__slide-link" href="">
+                <article class="product-card">
+                  <h3>Layered сhoker</h3>
+                  <p>$ 115</p>
+                  <div class="product-card__img-wrapper">
+                    <picture>
+                      <source srcset="img/layered-choker-necklace.webp 1x, img/layered-choker-necklace@2x.webp 2x" type="image/webp">
+                      <img src="img/layered-choker-necklace.jpg" alt="Layered choker necklace" width="270" height="284">
+                    </picture>
+                  </div>
+                </article>
+              </a>
+            </li>
+            <li class="swiper__slide">
+              <a class="swiper__slide-link" href="">
+                <article class="product-card">
+                  <h3>Gold chain</h3>
+                  <p>$ 215</p>
+                  <div class="product-card__img-wrapper">
+                    <picture>
+                      <source srcset="img/dainty-gold-necklace.webp 1x, img/dainty-gold-necklace@2x.webp 2x" type="image/webp">
+                      <img src="img/dainty-gold-necklace.jpg" alt="Dainty gold necklace" width="270" height="284">
+                    </picture>
+                  </div>
+                </article>
+              </a>
+            </li>
+            <li class="swiper__slide">
+              <a class="swiper__slide-link" href="">
+                <article class="product-card">
+                  <h3>Galaxy earrings</h3>
+                  <p>$ 95</p>
+                  <div class="product-card__img-wrapper">
+                    <picture>
+                      <source srcset="img/galaxy-earrings.webp 1x, img/galaxy-earrings@2x.webp 2x" type="image/webp">
+                      <img src="img/galaxy-earrings.jpg" alt="Galaxy earrings" width="270" height="284">
+                    </picture>
+                  </div>
+                </article>
+              </a>
+            </li>
+          </ul>
+          <ul class="swiper__pagination">
+            <li class="swiper__pagination-element">
+              <a class="swiper__pagination-link" href="">1</a>
+            </li>
+            <li class="swiper__pagination-element">
+              <a class="swiper__pagination-link" href="">2</a>
+            </li>
+            <li class="swiper__pagination-element">
+              <a class="swiper__pagination-link" href="">3</a>
+            </li>
+            <li class="swiper__pagination-element">
+              <a class="swiper__pagination-link" href="">4</a>
+            </li>
+          </ul>
+          <div class="slider-mobile-pagination">
+            <p><span class="slider-mobile-pagination__current">1</span> of <span class="slider-mobile-pagination__total">6</span></p>
+          </div>
+      </div>
+    </section>
+    <section class="blog">
+      <h2>Blog</h2>
+      <a class="blog__extra-link" href="">Read All</a>
+      <ul class="artical-list">
+        <li class="artical-list__element">
+          <article class="preview-article">
+            <div class="preview-article__img-wrapper">
+              <picture>
+                <source srcset="img/jess-harper-sunday-unsplash.webp 1x, img/jess-harper-sunday-unsplash@2x.webp 2x" type="image/webp">
+                <img src="img/jess-harper-sunday-unsplash.jpg" alt="Jewellery on table" width="285" height="300">
+              </picture>
+            </div>
+            <div class="preview-article__info-wrapper">
+              <h3>How to care for your jewellery</h3>
+              <p>September 30, 2019</p>
+              <a class="preview-article__read-more-link" href="">Read Article</a>
+            </div>
+          </article>
+        </li>
+        <li class="artical-list__element">
+          <article>
+            <div class="preview-article__img-wrapper">
+              <picture>
+                <source srcset="img/alex-holyoake-unsplash.webp 1x, img/alex-holyoake-unsplash@2x.webp 2x" type="image/webp">
+                <img src="img/alex-holyoake-unsplash.jpg" alt="Some earrings" width="285" height="300">
+              </picture>
+            </div>
+            <div class="preview-article__info-wrapper">
+              <h3>Power of crystals</h3>
+              <p>September 23, 2019</p>
+              <a class="preview-article__read-more-link" href="">Read Article</a>
+            </div>
+          </article>
+        </li>
+        <li class="artical-list__element">
+          <article>
+            <div class="preview-article__img-wrapper">
+              <picture>
+                <source srcset="img/alve-odonnell-unsplash.webp 1x, img/alve-odonnell-unsplash@2x.webp 2x" type="image/webp">
+                <img src="img/alve-odonnell-unsplash.jpg" alt="Woman with rings" width="570" height="630">
+              </picture>
+            </div>
+            <div class="preview-article__info-wrapper">
+              <h3>AW 19 trends</h3>
+              <p>September 16, 2019</p>
+              <a class="preview-article__read-more-link" href="">Read Article</a>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
+    <section class="faq">
+      <h2>Frequently asked questions</h2>
+      <ul class="faq-list">
+        <li class="faq-list__element">
+          <h3>What materials are the jewellery made of?</h3>
+          <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+          <svg class="faq-list__svg" width="15" height="8">
+              <use xlink:href="#icon-arrow-down"></use>
+          </svg>
+        </li>
+        <li class="faq-list__element">
+          <h3>Which countries do you deliver to?</h3>
+          <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+          <svg class="faq-list__svg" width="15" height="8">
+              <use xlink:href="#icon-arrow-down"></use>
+          </svg>
+        </li>
+        <li class="faq-list__element">
+          <h3>What are the payment methods?</h3>
+          <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+          <svg class="faq-list__svg" width="15" height="8">
+              <use xlink:href="#icon-arrow-down"></use>
+          </svg>
+        </li>
+        <li class="faq-list__element">
+          <h3>Can I return the jewellery if it didn’t fit me?</h3>
+          <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+          <svg class="faq-list__svg" width="15" height="8">
+              <use xlink:href="#icon-arrow-down"></use>
+          </svg>
+        </li>
+      </ul>
+    </section>
+    <section class="company-info">
+      <h2><span class="company-info__special-symbol">@</span>Chjewellery</h2>
+      <a class="company-info__fillow-us-link" href=""></a>
+      <ul class="gallery">
+        <li class="gallery__element">
+          <div class="gallery__img-wrapper">
+            <picture>
+              <source srcset="img/inst-1.webp 1x, img/inst-1@2x.webp 2x" type="image/webp">
+              <img src="img/inst-1.jpg" alt="Earrings on Macbook" width="230" height="230">
+            </picture>
+          </div>
+        </li>
+        <li class="gallery__element">
+          <div class="gallery__img-wrapper">
+            <picture>
+              <source srcset="img/inst-2.webp 1x, img/inst-2@2x.webp 2x" type="image/webp">
+              <img src="img/inst-2.jpg" alt="Long earrings" width="230" height="230">
+            </picture>
+          </div>
+        </li>
+        <li class="gallery__element">
+          <div class="gallery__img-wrapper">
+            <picture>
+              <source srcset="img/inst-3.webp 1x, img/inst-3@2x.webp 2x" type="image/webp">
+              <img src="img/inst-3.jpg" alt="Woman with big rounded earrings" width="230" height="230">
+            </picture>
+          </div>
+        </li>
+        <li class="gallery__element">
+          <div class="gallery__img-wrapper">
+            <picture>
+              <source srcset="img/inst-4.webp 1x, img/inst-4@2x.webp 2x" type="image/webp">
+              <img src="img/inst-4.jpg" alt="Bracelets over sweater " width="230" height="230">
+            </picture>
+          </div>
+        </li>
+        <li class="gallery__element">
+          <div class="gallery__img-wrapper">
+            <picture>
+              <source srcset="img/inst-5.webp 1x, img/inst-5@2x.webp 2x" type="image/webp">
+              <img src="img/inst-5.jpg" alt="Full complect: chain, bracelet, earrings" width="230" height="230">
+            </picture>
+          </div>
+        </li>
+        <li class="gallery__element">
+          <div class="gallery__img-wrapper">
+            <picture>
+              <source srcset="img/inst-6.webp 1x, img/inst-6@2x.webp 2x" type="image/webp">
+              <img src="img/inst-6.jpg" alt="Earrings on book" width="230" height="230">
+            </picture>
+          </div>
+        </li>
+        <li class="gallery__element">
+          <div class="gallery__img-wrapper">
+            <picture>
+              <source srcset="img/inst-7.webp 1x, img/inst-7@2x.webp 2x" type="image/webp">
+              <img src="img/inst-7.jpg" alt="Woman with rings" width="230" height="230">
+            </picture>
+          </div>
+        </li>
+      </ul>
+    </section>
   </main>
   <footer class="page-footer">
     <form action="https://echo.htmlacademy.ru" method="GET" class="subscription">
@@ -187,6 +440,7 @@
       </ul>
     </nav>
     <section class="socials">
+      <h2 class="visually-hidden">Our socials</h2>
       <ul class="sm-list">
         <li class="sm-list__element">
           <a class="sm-list__link" href="">

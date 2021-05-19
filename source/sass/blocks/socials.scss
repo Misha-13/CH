@@ -2,4 +2,8 @@
   outline: 2px dotted blue;
 
   flex-basis: 115px;
+
+  @media (max-width: $tablet-width) {
+    flex-basis: auto;
+  }
 }

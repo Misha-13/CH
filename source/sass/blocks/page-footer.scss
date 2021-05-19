@@ -21,6 +21,7 @@
   }
 
   @media (max-width: $tablet-width) {
+    flex-direction: column;
     padding-top: 60px;
     padding-bottom: 60px;
     padding-left: 15px;

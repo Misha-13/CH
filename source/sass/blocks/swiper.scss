@@ -1,0 +1,107 @@
+.swiper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: -55px;
+}
+
+.swiper__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 95px;
+}
+
+.swiper__button {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    .swiper__svg {
+      stroke: $layout-black-lighter;
+    }
+  }
+
+  &:active {
+    .swiper__svg {
+      stroke: $layout-black-lighter;
+      opacity: 0.5;
+    }
+  }
+}
+
+.swiper__button--previous {
+  transform: rotate(180deg);
+}
+
+.swiper__svg {
+  width: 25px;
+  height: 16px;
+  stroke: $layout-brown;
+}
+
+.swiper__slides-wrapper {
+  @include clear-lists-style;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: max-content;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.swiper__pagination {
+  @include clear-lists-style;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.swiper__pagination-element {
+  /* margin-right: 15px; */
+  margin-right: 7px;
+  margin-left: 7px;
+
+  /* &:last-child {
+    margin-right: 0;
+  } */
+}
+
+.swiper__pagination-element--current {
+  a {
+    color: $layout-black-lighter;
+  }
+}
+
+.swiper__pagination-element--tablet {
+  display: none;
+}
+
+.swiper__pagination-link {
+  text-decoration: none;
+  font-family: $default-font;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: $layout-grey;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.slider-mobile-pagination {
+  font-family: $default-font;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: $layout-black-lighter;
+}

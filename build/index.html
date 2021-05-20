@@ -147,11 +147,12 @@
             <h2>Perfection</h2>
             <p>Made to be yours</p>
         </div>
+        <!-- 1х: 1366px; 2x: 2732px -->
         <picture>
           <source srcset="img/intro-desktop.webp 1x, img/intro-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1024px)">
           <source srcset="img/intro-tablet.webp 1x, img/intro-tablet@2x.webp 2x" media="(max-width: 1023px)" type="image/webp">
           <source srcset="img/intro-mobil.webp 1x, img/intro-mobil@2x.webp 2x" media="(max-width: 767px)" type="image/webp">
-          <img src="img/intro-desktop.jpg" alt="Woman in jacket with jewelleries" width="1366" height="463">
+          <img src="img/intro-desktop.jpg" srcset="img/intro-desktop@2x.jpg 2x" loading="lazy" alt="Woman in jacket with jewelleries" width="1366" height="463">
         </picture>
       </div>
     </section>
@@ -160,21 +161,21 @@
       <a class="new-items__extra-link" href="">Shop Now</a>
       <div class="swiper">
           <div class="swiper__navigation">
-            <div class="swiper__button--previous">
-                <svg class="page-header__svg page-header__svg--burger" width="25" height="16">
-                  <use xlink:href="#icon-slider-arrow-right"></use> <!-- Нужна картинка -->
-                </svg>
-            </div>
-            <div class="swiper__button--next">
-                <svg class="page-header__svg page-header__svg--burger" width="25" height="16">
-                  <use xlink:href="#icon-slider-arrow-right"></use>
-                </svg>
-            </div>
+            <a class="swiper__button swiper__button--previous">
+              <svg class="swiper__svg" width="25" height="16">
+                <use xlink:href="#icon-slider-arrow-right"></use>
+              </svg>
+            </a>
+            <a class="swiper__button">
+              <svg class="swiper__svg" width="25" height="16">
+                <use xlink:href="#icon-slider-arrow-right"></use>
+              </svg>
+            </a>
           </div>
           <ul class="swiper__slides-wrapper">
             <li class="swiper__slide">
-              <a class="swiper__slide-link" href="">
-                <article class="product-card">
+              <article class="product-card">
+                <a class="product-card__link" href="">
                   <h3>Necklace with amethyst</h3>
                   <p>$ 145</p>
                   <div class="product-card__img-wrapper">
@@ -183,12 +184,12 @@
                       <img src="img/purple-gemstone-necklace.jpg" alt="Purple gemstone necklace" width="270" height="284">
                     </picture>
                   </div>
+                </a>
                 </article>
-              </a>
             </li>
             <li class="swiper__slide">
-              <a class="swiper__slide-link" href="">
-                <article class="product-card">
+              <article class="product-card">
+                <a class="product-card__link" href="">
                   <h3>Layered сhoker</h3>
                   <p>$ 115</p>
                   <div class="product-card__img-wrapper">
@@ -197,26 +198,26 @@
                       <img src="img/layered-choker-necklace.jpg" alt="Layered choker necklace" width="270" height="284">
                     </picture>
                   </div>
-                </article>
-              </a>
+                </a>
+              </article>
             </li>
             <li class="swiper__slide">
-              <a class="swiper__slide-link" href="">
-                <article class="product-card">
+              <article class="product-card">
+                <a class="product-card__link" href="">
                   <h3>Gold chain</h3>
                   <p>$ 215</p>
-                  <div class="product-card__img-wrapper">
+                  <div class="product-card__img-wrapper product-card__img-wrapper--long-position">
                     <picture>
                       <source srcset="img/dainty-gold-necklace.webp 1x, img/dainty-gold-necklace@2x.webp 2x" type="image/webp">
                       <img src="img/dainty-gold-necklace.jpg" alt="Dainty gold necklace" width="270" height="284">
                     </picture>
                   </div>
-                </article>
-              </a>
+                </a>
+              </article>
             </li>
             <li class="swiper__slide">
-              <a class="swiper__slide-link" href="">
-                <article class="product-card">
+              <article class="product-card">
+                <a class="product-card__link" href="">
                   <h3>Galaxy earrings</h3>
                   <p>$ 95</p>
                   <div class="product-card__img-wrapper">
@@ -225,12 +226,12 @@
                       <img src="img/galaxy-earrings.jpg" alt="Galaxy earrings" width="270" height="284">
                     </picture>
                   </div>
-                </article>
-              </a>
+                </a>
+              </article>
             </li>
           </ul>
           <ul class="swiper__pagination">
-            <li class="swiper__pagination-element">
+            <li class="swiper__pagination-element swiper__pagination-element--current">
               <a class="swiper__pagination-link" href="">1</a>
             </li>
             <li class="swiper__pagination-element">
@@ -239,8 +240,14 @@
             <li class="swiper__pagination-element">
               <a class="swiper__pagination-link" href="">3</a>
             </li>
-            <li class="swiper__pagination-element">
+            <li class="swiper__pagination-element swiper__pagination-element--tablet">
               <a class="swiper__pagination-link" href="">4</a>
+            </li>
+            <li class="swiper__pagination-element swiper__pagination-element--tablet">
+              <a class="swiper__pagination-link" href="">5</a>
+            </li>
+            <li class="swiper__pagination-element swiper__pagination-element--tablet">
+              <a class="swiper__pagination-link" href="">6</a>
             </li>
           </ul>
           <div class="slider-mobile-pagination">

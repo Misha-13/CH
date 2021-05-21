@@ -1,0 +1,20 @@
+.article-list {
+  @include clear-lists-style;
+
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px;
+  grid-gap: 30px;
+}
+
+.article-list__element {
+  display: flex;
+}
+
+.article-list__element--big {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}

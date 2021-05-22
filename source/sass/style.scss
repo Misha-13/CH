@@ -3,6 +3,9 @@
 @import "variables.scss";
 @import "mixin.scss";
 @import "global.scss";
+@import "vendor/swiper-vars";
+@import "vendor/swiper";
+@import "vendor/pagination";
 @import "blocks/page.scss";
 @import "blocks/logo.scss";
 @import "blocks/page-body.scss";

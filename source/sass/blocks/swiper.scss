@@ -1,7 +1,7 @@
 .swiper {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
   width: 100%;
   margin-top: -55px;
 }
@@ -47,11 +47,14 @@
 .swiper__slides-wrapper {
   @include clear-lists-style;
   width: 100%;
-  display: grid;
+  height: max-content;
+  /* display: grid; */
+
   /* grid-template-columns: auto auto auto auto; */
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  /* grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: max-content;
-  gap: 30px;
+  gap: 30px; */
   margin-bottom: 60px;
 }
 
@@ -59,6 +62,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1px;
 }
 
 .swiper__pagination {

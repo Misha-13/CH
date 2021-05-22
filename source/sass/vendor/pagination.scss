@@ -1,0 +1,230 @@
+// @import '../../swiper-vars.scss';
+
+:root {
+  /*
+  --swiper-pagination-color: var(--swiper-theme-color);
+  */
+}
+
+.swiper-pagination {
+  position: absolute;
+  z-index: 10;
+
+  text-align: center;
+
+  transform: translate3d(0, 0, 0);
+
+  transition: 300ms opacity;
+  &.swiper-pagination-hidden {
+    opacity: 0;
+  }
+}
+/* Common Styles */
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 10px;
+  left: 0;
+
+  width: 100%;
+}
+/* Bullets */
+.swiper-pagination-bullets-dynamic {
+  overflow: hidden;
+
+  font-size: 0;
+
+  .swiper-pagination-bullet {
+    position: relative;
+
+    transform: scale(0.33);
+  }
+
+  .swiper-pagination-bullet-active {
+    transform: scale(1);
+  }
+
+  .swiper-pagination-bullet-active-main {
+    transform: scale(1);
+  }
+
+  .swiper-pagination-bullet-active-prev {
+    transform: scale(0.66);
+  }
+
+  .swiper-pagination-bullet-active-prev-prev {
+    transform: scale(0.33);
+  }
+
+  .swiper-pagination-bullet-active-next {
+    transform: scale(0.66);
+  }
+
+  .swiper-pagination-bullet-active-next-next {
+    transform: scale(0.33);
+  }
+}
+
+.swiper-pagination-bullet {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+
+  background: #000000;
+  border-radius: 50%;
+  opacity: 0.2;
+
+  @at-root button#{&} {
+    margin: 0;
+    padding: 0;
+
+    border: none;
+    box-shadow: none;
+
+    appearance: none;
+  }
+
+  .swiper-pagination-clickable & {
+    cursor: pointer;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--swiper-pagination-color, var(--swiper-theme-color));
+  opacity: 1;
+  color: #1d1613;
+  border-radius: 0;
+}
+
+.swiper-container-vertical {
+  > .swiper-pagination-bullets {
+    top: 50%;
+    right: 10px;
+
+    transform: translate3d(0px, -50%, 0);
+
+    .swiper-pagination-bullet {
+      display: block;
+      margin: 6px 0;
+    }
+
+    &.swiper-pagination-bullets-dynamic {
+      top: 50%;
+
+      width: 8px;
+
+      transform: translateY(-50%);
+
+      .swiper-pagination-bullet {
+        display: inline-block;
+
+        transition: 200ms transform, 200ms top;
+      }
+    }
+  }
+}
+
+.swiper-container-horizontal {
+  > .swiper-pagination-bullets {
+    .swiper-pagination-bullet {
+      margin: 0 4px;
+    }
+    &.swiper-pagination-bullets-dynamic {
+      left: 50%;
+
+      white-space: nowrap;
+
+      transform: translateX(-50%);
+
+      .swiper-pagination-bullet {
+        transition: 200ms transform, 200ms left;
+      }
+    }
+  }
+
+  &.swiper-container-rtl > .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+    transition: 200ms transform, 200ms right;
+  }
+}
+/* Progress */
+.swiper-pagination-progressbar {
+  position: absolute;
+
+  background: rgba(0, 0, 0, 0.25);
+
+  .swiper-pagination-progressbar-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: var(--swiper-pagination-color, var(--swiper-theme-color));
+    transform: scale(0);
+    transform-origin: left top;
+  }
+
+  .swiper-container-rtl & .swiper-pagination-progressbar-fill {
+    transform-origin: right top;
+  }
+
+  .swiper-container-horizontal > &,
+  .swiper-container-vertical > &.swiper-pagination-progressbar-opposite {
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+  }
+
+  .swiper-container-vertical > &,
+  .swiper-container-horizontal > &.swiper-pagination-progressbar-opposite {
+    top: 0;
+    left: 0;
+
+    width: 4px;
+    height: 100%;
+  }
+}
+
+@each $paginationColorName, $paginationColorValue in $colors {
+  .swiper-pagination-#{$paginationColorName} {
+    --swiper-pagination-color: #{$paginationColorValue};
+  }
+}
+
+.swiper-pagination-lock {
+  display: none;
+}
+
+.swiper-pagination-bullet {
+  display: inline-block;
+  min-width: 21px;
+  height: auto;
+  vertical-align: top;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  opacity: 1;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  font-family: "Poppins","Arial","Helvetica",sans-serif;
+  color: #9b9997;
+
+  @media (max-width: 1023px) {
+     min-width: 23px
+  }
+}
+
+ .swiper-pagination-bullet:focus,
+ .swiper-pagination-bullet:hover {
+  outline: 1px solid #a87b62;
+  border-radius: 50%;
+  outline-offset: -2px;
+ }
+
+ .swiper-pagination-bullet-active {
+   color: $layout-black-lighter;
+ }

@@ -1,15 +1,26 @@
 'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
+var swiper = new window.Swiper('.swiper-container', {
+  // Optional parameters
+  loop: true,
+  slidesPerView: 4,
+  slidesPerGroup: 4,
+  centeredSlides: false,
+  spaceBetween: 30,
+  centeredSlidesBounds: true,
 
-pageHeader.classList.remove('page-header--nojs');
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: 'true',
+    renderBullet: function renderBullet(index, className) {
+      return '<span class="' + className + '">' + (index + 1) + '</span>';
+    }
+  },
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
+  // Navigation arrows
+  navigation: {
+    prevEl: '.swiper-button-prev',
   }
 });
+
+

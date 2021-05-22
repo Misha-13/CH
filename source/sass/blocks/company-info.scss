@@ -1,4 +1,4 @@
-.blog {
+.company-info {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +16,12 @@
   }
 }
 
-.blog__extra-link {
+.company-info__special-symbol {
+  font-size: 42px;
+  line-height: 55px;
+}
+
+.company-info__fillow-us-link {
   text-decoration: none;
   font-family: $default-font;
   font-weight: 500;

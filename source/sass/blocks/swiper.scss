@@ -48,10 +48,17 @@
   @include clear-lists-style;
   width: 100%;
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  /* grid-template-columns: auto auto auto auto; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: max-content;
   gap: 30px;
   margin-bottom: 60px;
+}
+
+.swiper__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .swiper__pagination {

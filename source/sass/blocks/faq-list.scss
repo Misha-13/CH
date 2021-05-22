@@ -1,0 +1,69 @@
+.faq-list {
+  @include clear-lists-style;
+  width: 100%;
+  border: 1px solid $layout-brown;
+}
+
+.faq-list__element {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 38px;
+  padding-right: 75px;
+  border-bottom: 1px solid $layout-brown;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  h3 {
+    font-family: $default-font;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: $layout-black-lighter;
+    margin: 0;
+  }
+
+  p {
+    width: 530px;
+    font-family: $default-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: $layout-black-lighter;
+    margin: 0;
+    margin-top: 20px;
+  }
+}
+
+.faq-list__link {
+  position: absolute;
+  display: block;
+  top: 52px;
+  right: 52px;
+
+  &:hover,
+  &:focus {
+    .faq-list__svg {
+      stroke: $layout-black;
+    }
+  }
+
+  &:active {
+    .faq-list__svg {
+      opacity: 0.7;
+    }
+  }
+}
+
+.faq-list__link--selected {
+  transform: rotate(180deg);
+}
+
+.faq-list__svg {
+  width: 15px;
+  height: 8px;
+  fill: transparent;
+  stroke: $layout-brown;
+}

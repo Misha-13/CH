@@ -1,0 +1,17 @@
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 198px;
+  padding-left: 198px;
+  margin-bottom: 108px;
+
+  h2 {
+    font-family: $extra-font;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 44px;
+    color: $layout-black-lighter;
+    margin-bottom: 60px;
+  }
+}

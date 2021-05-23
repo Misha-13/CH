@@ -12,7 +12,20 @@
     font-size: 34px;
     line-height: 44px;
     color: $layout-black-lighter;
+    margin: 0;
     margin-bottom: 35px;
+  }
+
+  @media (max-width: $desktop-width) {
+    padding-right: 45px;
+    padding-left: 45px;
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 70px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 

@@ -8,19 +8,59 @@ var swiper = new window.Swiper('.swiper-container', {
   spaceBetween: 30,
   centeredSlidesBounds: true,
 
-  // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
-    clickable: 'true',
-    renderBullet: function renderBullet(index, className) {
-      return '<span class="' + className + '">' + (index + 1) + '</span>';
-    }
+    el: document.querySelector('.swiper-pagination'),
   },
 
   // Navigation arrows
   navigation: {
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      pagination: {
+        type: 'fraction',
+        renderFraction: function (currentClass, totalClass) {
+          return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
+        }
+      }
+    },
+    600: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      pagination: {
+        type: 'fraction',
+        renderFraction: function (currentClass, totalClass) {
+          return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
+        }
+      }
+    },
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      pagination: {
+        type: 'bullets',
+        clickable: 'true',
+        renderBullet: function renderBullet(index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        }
+      }
+    },
+    1024: {
+      spaceBetween: 29,
+      slidesPerView: 4,
+      slidesPerGroup: 4,
+      pagination: {
+        type: 'bullets',
+        clickable: 'true',
+        renderBullet: function renderBullet(index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        }
+      }
+    }
   }
 });
-
-

@@ -1,0 +1,113 @@
+.price-slider {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding-bottom: 35px;
+
+  input {
+    display: none;
+  }
+
+  label {
+    position: absolute;
+    top: 15px;
+    padding: 0;
+
+    &:hover,
+    &:focus {
+      outline: none;
+    }
+  }
+
+  @media (max-width: $desktop-width) {
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 11px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 9px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+
+.price-slider__line {
+  position: relative;
+  height: 1px;
+}
+
+.price-slider__line--low {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 26%;
+  background-color: $layout-grey-lighter;
+
+  label {
+    right: -15px;
+  }
+
+  @media (max-width: $desktop-width) {
+    width: 17%;
+  }
+}
+
+.price-slider__line--middle {
+  width: 100%;
+  background-color: $layout-brown;
+}
+
+
+.price-slider__pin {
+  position: absolute;
+  top: -7px;
+  width: 16px;
+  height: 16px;
+  background-color: $layout-brown;
+  border-radius: 50%;
+  cursor: pointer;
+
+  @media (max-width: $desktop-width) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.price-slider__pin--low {
+  left: -8px;
+
+  @media (max-width: $desktop-width) {
+    left: -9px;
+  }
+}
+
+.price-slider__pin--top {
+  right: -8px;
+  z-index: 3;
+
+  @media (max-width: $desktop-width) {
+    right: -9px;
+  }
+}
+
+.price-slider__line--top {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 21%;
+  background-color: $layout-grey-lighter;
+
+  label {
+    left: -16px;
+  }
+
+  @media (max-width: $desktop-width) {
+    width: 24%;
+
+    label {
+      left: -19px;
+    }
+  }
+}

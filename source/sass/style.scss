@@ -6,6 +6,8 @@
 @import "vendor/swiper-vars";
 @import "vendor/swiper";
 @import "vendor/pagination";
+@import "blocks/common-button.scss";
+@import "blocks/filter-form.scss";
 @import "blocks/page.scss";
 @import "blocks/logo.scss";
 @import "blocks/page-body.scss";
@@ -33,3 +35,6 @@
 @import "blocks/faq-list.scss";
 @import "blocks/company-info.scss";
 @import "blocks/gallery.scss";
+@import "blocks/catalog.scss";
+@import "blocks/items-list.scss";
+@import "blocks/price-slider.scss";

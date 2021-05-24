@@ -1,6 +1,5 @@
 .article-list {
   @include clear-lists-style;
-
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;

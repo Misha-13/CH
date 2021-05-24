@@ -60,6 +60,12 @@
       color: $layout-brown;
     }
   }
+
+  @media (max-width: $tablet-width) {
+    h3 {
+      margin-top: 20px;
+    }
+  }
 }
 
 .product-card__img-wrapper {
@@ -98,6 +104,26 @@
   }
 
   @media (max-width: $tablet-width) {
+    img {
+      height: 136px;
+    }
+  }
+}
+
+.product-card__img-wrapper--catalog {
+  height: 272px;
+
+  @media (max-width: $desktop-width) {
+    height: 208px;
+
+    img {
+      height: 208px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    height: 136px;
+
     img {
       height: 136px;
     }

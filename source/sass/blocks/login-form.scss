@@ -1,0 +1,112 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 35px;
+  padding-right: 35px;
+
+  @media (max-width: $desktop-width) {
+    padding-left: 51px;
+    padding-right: 51px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.login-form__fieldset {
+  border: none;
+  padding: 0;
+  margin-bottom: 10px;
+
+  input {
+    padding: 0;
+    padding-bottom: 9px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $layout-black-lighter;
+    width: 100%;
+    margin-bottom: 36px;
+
+    &::placeholder {
+      font-family: $default-font;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      color: $layout-grey;
+    }
+
+    &:focus,
+    &:hover {
+      outline: none;
+      border-color: $layout-brown;
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+}
+
+.login-form__wrapper {
+  position: relative;
+}
+
+.login-form__link {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  text-decoration: none;
+  font-family: $default-font;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: $layout-grey;
+
+  &:focus,
+  &:hover {
+    border-color: $layout-brown;
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.login-modal__link-wrapper {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: $tablet-width) {
+    bottom: 35px;
+  }
+}
+
+.login-form__link--accaount {
+  position: relative;
+  right: auto;
+  bottom: auto;
+  font-size: 14px;
+  line-height: 21px;
+  margin-right: 5px;
+}
+
+.login-form__link--signup {
+  position: relative;
+  right: auto;
+  bottom: auto;
+  font-size: 14px;
+  line-height: 21px;
+  color: $layout-black-lighter;
+}
+
+.login-form__submit {
+  @media (max-width: $tablet-width) {
+    margin-top: 15px;
+  }
+}

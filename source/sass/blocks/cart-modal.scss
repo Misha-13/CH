@@ -10,6 +10,10 @@
   overflow-y: scroll;
 }
 
+.cart-modal--close {
+  display: none;
+}
+
 .cart-modal__wrapper {
   position: relative;
   box-sizing: border-box;

@@ -70,7 +70,7 @@
 
   <header class="page-header">
     <div class="page-header__top-wrapper">
-      <a class="logo" href="/index.html">
+      <a class="logo">
         <picture>
           <source srcset="img/logo-menu.svg" media="(max-width: 1023px)">
           <img src="img/logo.svg" alt="Логотип CH" width="66" height="66">
@@ -81,7 +81,6 @@
         <input type="search" id="header-search" name="header-search" placeholder="Type here to search" aria-label="Поиск по сайту">
       </form>
       <button class="page-header__burger-button">
-        <span class="visually-hidden">Open/close menu</span>
         <svg class="page-header__svg page-header__svg--burger" width="25" height="16">
           <use xlink:href="#icon-burger"></use>
         </svg>
@@ -135,330 +134,7 @@
     </div>
   </header>
   <main class="page-main">
-    <h1 class="visually-hidden">Jewellery Catalog</h1>
-    <section class="promo promo--catalog">
-      <div class="promo__img-wrapper promo__img-wrapper--catalog">
-        <div class="promo__promo-text-wrapper promo__promo-text-wrapper--catalog">
-            <h2>All jewellery</h2>
-            <p>Discover picks of fashion's finest trends in our jewellery catalog</p>
-        </div>
-        <!-- 1х: 1366px; 2x: 2732px -->
-        <picture>
-          <source srcset="img/catalog-intro-desktop.webp 1x, img/catalog-intro-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1024px)">
-          <source srcset="img/catalog-intro-tablet.webp 1x, img/catalog-intro-tablet@2x.webp 2x" media="(max-width: 1023px)" type="image/webp">
-          <source srcset="img/catalog-intro-mobil.webp 1x, img/catalog-intro-mobil@2x.webp 2x" media="(max-width: 767px)" type="image/webp">
-          <img src="img/catalog-intro-desktop.jpg" srcset="img/catalog-intro-desktop@2x.jpg 2x" loading="lazy" alt="Woman in jacket with jewelleries" width="1366" height="463">
-        </picture>
-      </div>
-    </section>
-    <section class="catalog">
-      <h2 class="visually-hidden">Items list</h2>
-      <form action="https://echo.htmlacademy.ru" method="GET" class="filter-form">
-        <button class="filter-form__close-button" type="button">
-          <svg class="filter-form__svg-close" width="32" height="32">
-            <use xlink:href="#icon-round-close"></use>
-          </svg>
-        </button>
-        <fieldset class="filter-form__fieldset">
-          <h3>Product</h3>
-          <a class="filter-form__restore-button filter-form__restore-button--clicked filter-form__restore-button--no-js" href="/blank.html">
-            <p>Restore button</p>
-            <svg class="filter-form__svg" width="15" height="8">
-              <use xlink:href="#icon-arrow-down"></use>
-            </svg>
-          </a>
-          <ul class="filter-form__list filter-form__list--no-js">
-            <li class="filter-form__list-element">
-              <input type="checkbox" name="necklaces" id="necklaces" checked="">
-              <label for="necklaces" tabindex="0">Necklaces</label>
-            </li>
-            <li class="filter-form__list-element">
-              <input type="checkbox" name="chokers" id="chokers" checked="">
-              <label for="chokers" tabindex="0">Chokers</label>
-            </li>
-            <li class="filter-form__list-element">
-              <input type="checkbox" name="rings" id="rings">
-              <label for="rings" tabindex="0">Rings</label>
-            </li>
-            <li class="filter-form__list-element">
-              <input type="checkbox" name="earrings" id="earrings" checked="">
-              <label for="earrings" tabindex="0">Earrings</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="filter-form__fieldset">
-          <h3>Material</h3>
-          <a class="filter-form__restore-button filter-form__restore-button--no-js" href="/blank.html">
-            <p>Restore button</p>
-            <svg class="filter-form__svg" width="15" height="8">
-              <use xlink:href="#icon-arrow-down"></use>
-            </svg>
-          </a>
-          <ul class="filter-form__list filter-form__list--closed filter-form__list--no-js">
-            <li class="filter-form__list-element">
-              <input type="checkbox" name="gold" id="gold" checked="">
-              <label for="gold" tabindex="0">Gold</label>
-            </li>
-            <li class="filter-form__list-element">
-              <input type="checkbox" name="silver" id="silver" checked="">
-              <label for="silver" tabindex="0">Silver</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="filter-form__fieldset">
-          <h3>Collection</h3>
-          <a class="filter-form__restore-button filter-form__restore-button--no-js" href="/blank.html">
-            <p>Restore button</p>
-            <svg class="filter-form__svg" width="15" height="8">
-              <use xlink:href="#icon-arrow-down"></use>
-            </svg>
-          </a>
-          <ul class="filter-form__list filter-form__list--closed filter-form__list--no-js">
-            <li class="filter-form__list-element">
-              <input type="checkbox" name="pink-flamingo" id="pink-flamingo" checked="">
-              <label for="pink-flamingo" tabindex="0">Pink flamingo</label>
-            </li>
-            <li class="filter-form__list-element">
-              <input type="checkbox" name="dreams" id="dreams" checked="">
-              <label for="dreams" tabindex="0">Dreams</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="filter-form__fieldset">
-          <h3>Price</h3>
-          <a class="filter-form__restore-button filter-form__restore-button--clicked filter-form__restore-button--no-js" href="/blank.html">
-            <p>Restore button</p>
-            <svg class="filter-form__svg" width="15" height="8">
-              <use xlink:href="#icon-arrow-down"></use>
-            </svg>
-          </a>
-          <div class="filter-form__list filter-form__list--closed filter-form__list--no-js">
-            <div class="price-slider">
-              <div class="price-slider__line price-slider__line--low">
-                <label for="low-price">$ 55 </label>
-                <input type="text" name="low-price" id="low-price" value="55" tabindex="13">
-              </div>
-              <div class="price-slider__line price-slider__line--middle">
-                <span class="price-slider__pin price-slider__pin--low"></span>
-                <span class="price-slider__pin price-slider__pin--top"></span>
-              </div>
-              <div class="price-slider__line price-slider__line--top">
-                <label for="top-price">$ 155</label>
-                <input type="text" name="top-price" id="top-price" value="155" tabindex="14">
-              </div>
-            </div>
-          </div>
-        </fieldset>
-        <button type="submit" class="common-button filter-form__button">Apply</button>
-        <button type="reset" class="common-button common-button--reversed filter-form__button">Clear All</button>
-      </form>
-      <div class="catalog__items-wrapper">
-        <a class="common-button catalog__filter-button catalog__filter-button--no-js" href="/blank.html">Filter</a>
-        <ul class="items-list">
-          <li class="items-list__element">
-            <article class="product-card">
-              <a class="product-card__link" href="/item.html">
-                <h3>Double pearl earrings </h3>
-                <p>$ 115</p>
-                <div class="product-card__img-wrapper product-card__img-wrapper--catalog">
-                  <!-- 1х: 206px; 2x: 412px -->
-                  <picture>
-                    <source srcset="img/double-pearl-earrings.webp 1x, img/double-pearl-earrings@2x.webp 2x" type="image/webp">
-                    <img src="img/double-pearl-earrings.jpg" srcset="img/double-pearl-earrings@2x.jpg 2x" loading="lazy" alt="Pearl earrings" width="206" height="208">
-                  </picture>
-                </div>
-              </a>
-            </article>
-          </li>
-          <li class="items-list__element">
-            <article class="product-card">
-              <a class="product-card__link" href="/item.html">
-                <h3>Choker with gold bead</h3>
-                <p>$ 55</p>
-                <div class="product-card__img-wrapper product-card__img-wrapper--catalog">
-                  <!-- 1х: 206px; 2x: 412px -->
-                  <picture>
-                    <source srcset="img/black-choker-gold-bead.webp 1x, img/black-choker-gold-bead@2x.webp 2x" type="image/webp">
-                    <img src="img/black-choker-gold-bead.jpg" srcset="img/black-choker-gold-bead@2x.jpg 2x" loading="lazy" alt="Black choker" width="206" height="208">
-                  </picture>
-                </div>
-              </a>
-            </article>
-          </li>
-          <li class="items-list__element">
-            <article class="product-card">
-              <a class="product-card__link" href="/item.html">
-                <h3>Gold layered necklace</h3>
-                <p>$ 155</p>
-                <div class="product-card__img-wrapper product-card__img-wrapper--catalog">
-                  <!-- 1х: 206px; 2x: 412px -->
-                  <picture>
-                    <source srcset="img/gold-layered-necklace.webp 1x, img/gold-layered-necklace@2x.webp 2x" type="image/webp">
-                    <img src="img/gold-layered-necklace.jpg" srcset="img/gold-layered-necklace@2x.jpg 2x" loading="lazy" alt="Gold layered necklace" width="206" height="208">
-                  </picture>
-                </div>
-              </a>
-            </article>
-          </li>
-          <li class="items-list__element">
-            <article class="product-card">
-              <a class="product-card__link" href="/item.html">
-                <h3>Blue gemstone pendant</h3>
-                <p>$ 105</p>
-                <div class="product-card__img-wrapper product-card__img-wrapper--catalog">
-                  <!-- 1х: 206px; 2x: 412px -->
-                  <picture>
-                    <source srcset="img/blue-gemstone-pendant.webp 1x, img/blue-gemstone-pendant@2x.webp 2x" type="image/webp">
-                    <img src="img/blue-gemstone-pendant.jpg" srcset="img/blue-gemstone-pendant@2x.jpg 2x" loading="lazy" alt="Blue gemstone pendant" width="206" height="208">
-                  </picture>
-                </div>
-              </a>
-            </article>
-          </li>
-          <li class="items-list__element">
-            <article class="product-card">
-              <a class="product-card__link" href="/item.html">
-                <h3>Boho earrings</h3>
-                <p>$ 75</p>
-                <div class="product-card__img-wrapper product-card__img-wrapper--catalog">
-                  <!-- 1х: 206px; 2x: 412px -->
-                  <picture>
-                    <source srcset="img/boho-earrings.webp 1x, img/boho-earrings@2x.webp 2x" type="image/webp">
-                    <img src="img/boho-earrings.jpg" srcset="img/boho-earrings@2x.jpg 2x" loading="lazy" alt="Boho earrings" width="206" height="208">
-                  </picture>
-                </div>
-              </a>
-            </article>
-          </li>
-          <li class="items-list__element">
-            <article class="product-card">
-              <a class="product-card__link" href="/item.html">
-                <h3>Gold bird necklace</h3>
-                <p>$ 135</p>
-                <div class="product-card__img-wrapper product-card__img-wrapper--catalog">
-                  <!-- 1х: 206px; 2x: 412px -->
-                  <picture>
-                    <source srcset="img/bird-necklace.webp 1x, img/bird-necklace@2x.webp 2x" type="image/webp">
-                    <img src="img/bird-necklace.jpg" srcset="img/bird-necklace@2x.jpg 2x" loading="lazy" alt="Bird necklace" width="206" height="208">
-                  </picture>
-                </div>
-              </a>
-            </article>
-          </li>
-          <li class="items-list__element">
-            <article class="product-card">
-              <a class="product-card__link" href="/item.html">
-                <h3>Black leather choker</h3>
-                <p>$ 85</p>
-                <div class="product-card__img-wrapper product-card__img-wrapper--catalog">
-                  <!-- 1х: 206px; 2x: 412px -->
-                  <picture>
-                    <source srcset="img/black-leather-choker-necklace.webp 1x, img/black-leather-choker-necklace@2x.webp 2x" type="image/webp">
-                    <img src="img/black-leather-choker-necklace.jpg" srcset="img/black-leather-choker-necklace@2x.jpg 2x" loading="lazy" alt="Black leather choker" width="206" height="208">
-                  </picture>
-                </div>
-              </a>
-            </article>
-          </li>
-          <li class="items-list__element">
-            <article class="product-card">
-              <a class="product-card__link" href="/item.html">
-                <h3>Necklace with amethyst</h3>
-                <p>$ 145</p>
-                <div class="product-card__img-wrapper product-card__img-wrapper--catalog">
-                  <!-- 1х: 206px; 2x: 412px -->
-                  <picture>
-                    <source srcset="img/purple-gemstone-necklace.webp 1x, img/purple-gemstone-necklace@2x.webp 2x" type="image/webp">
-                    <img src="img/purple-gemstone-necklace.jpg" srcset="img/purple-gemstone-necklace@2x.jpg 2x" loading="lazy" alt="Necklace with amethyst" width="206" height="208">
-                  </picture>
-                </div>
-              </a>
-            </article>
-          </li>
-          <li class="items-list__element">
-            <article class="product-card">
-              <a class="product-card__link" href="/item.html">
-                <h3>Elephant earrings</h3>
-                <p>$ 95</p>
-                <div class="product-card__img-wrapper product-card__img-wrapper--catalog">
-                  <!-- 1х: 206px; 2x: 412px -->
-                  <picture>
-                    <source srcset="img/elephant-earrings.webp 1x, img/elephant-earrings@2x.webp 2x" type="image/webp">
-                    <img src="img/elephant-earrings.jpg" srcset="img/elephant-earrings@2x.jpg 2x" loading="lazy" alt="Elephant earrings" width="206" height="208">
-                  </picture>
-                </div>
-              </a>
-            </article>
-          </li>
-          <li class="items-list__element">
-            <article class="product-card">
-              <a class="product-card__link" href="/item.html">
-                <h3>Threader necklace</h3>
-                <p>$ 115</p>
-                <div class="product-card__img-wrapper product-card__img-wrapper--catalog">
-                  <!-- 1х: 206px; 2x: 412px -->
-                  <picture>
-                    <source srcset="img/threader-necklace-closeup.webp 1x, img/threader-necklace-closeup@2x.webp 2x" type="image/webp">
-                    <img src="img/threader-necklace-closeup.jpg" srcset="img/threader-necklace-closeup@2x.jpg 2x" loading="lazy" alt="Threader necklace" width="206" height="208">
-                  </picture>
-                </div>
-              </a>
-            </article>
-          </li>
-          <li class="items-list__element">
-            <article class="product-card">
-              <a class="product-card__link" href="/item.html">
-                <h3>Origami crane necklace</h3>
-                <p>$ 105</p>
-                <div class="product-card__img-wrapper product-card__img-wrapper--long-position product-card__img-wrapper--catalog">
-                  <!-- 1х: 206px; 2x: 412px -->
-                  <picture>
-                    <source srcset="img/origami-crane-necklace.webp 1x, img/origami-crane-necklace@2x.webp 2x" type="image/webp">
-                    <img src="img/origami-crane-necklace.jpg" srcset="img/origami-crane-necklace@2x.jpg 2x" loading="lazy" alt="Origami crane necklace" width="206" height="208">
-                  </picture>
-                </div>
-              </a>
-            </article>
-          </li>
-          <li class="items-list__element">
-            <article class="product-card">
-              <a class="product-card__link" href="/item.html">
-                <h3>Marble earrings</h3>
-                <p>$ 95</p>
-                <div class="product-card__img-wrapper product-card__img-wrapper--catalog">
-                  <!-- 1х: 206px; 2x: 412px -->
-                  <picture>
-                    <source srcset="img/marble-earrings.webp 1x, img/marble-earrings@2x.webp 2x" type="image/webp">
-                    <img src="img/marble-earrings.jpg" srcset="img/marble-earrings@2x.jpg 2x" loading="lazy" alt="Marble earrings" width="206" height="208">
-                  </picture>
-                </div>
-              </a>
-            </article>
-          </li>
-        </ul>
-        <div class="catalog__pagination">
-          <a class="catalog__pagination-button" href="/blank.html">Previous</a>
-          <ul class="catalog__pagination-list">
-            <li class="catalog__pagination-list-element">
-              <a class="catalog__pagination-list-link catalog__pagination-list-link--active">1</a>
-            </li>
-            <li class="catalog__pagination-list-element">
-              <a class="catalog__pagination-list-link" href="/blank.html">2</a>
-            </li>
-            <li class="catalog__pagination-list-element">
-              <a class="catalog__pagination-list-link" href="/blank.html">3</a>
-            </li>
-            <li class="catalog__pagination-list-element">
-              <a class="catalog__pagination-list-link" href="/blank.html">4</a>
-            </li>
-            <li class="catalog__pagination-list-element">
-              <a class="catalog__pagination-list-link" href="/blank.html">5</a>
-            </li>
-          </ul>
-          <a class="catalog__pagination-button catalog__pagination-button--next" href="/blank.html">Next</a>
-        </div>
-      </div>
-    </section>
+    <h1>In progress ...</h1>
   </main>
   <footer class="page-footer">
     <form action="https://echo.htmlacademy.ru" method="GET" class="subscription">
@@ -509,7 +185,6 @@
       <ul class="sm-list">
         <li class="sm-list__element">
           <a class="sm-list__link" href="/blank.html">
-            <span class="visually-hidden">Our Facebook</span>
             <svg class="sm-list__svg sm-list__svg--facebook" width="8" height="15">
               <use xlink:href="#icon-facebook"></use>
             </svg>
@@ -518,7 +193,6 @@
         </li>
         <li class="sm-list__element">
           <a class="sm-list__link" href="/blank.html">
-            <span class="visually-hidden">Our Instagram</span>
             <svg class="sm-list__svg" width="15" height="15">
               <use xlink:href="#icon-instagram"></use>
             </svg>
@@ -527,7 +201,6 @@
         </li>
         <li class="sm-list__element">
           <a class="sm-list__link" href="/blank.html">
-            <span class="visually-hidden">Our Pinterest</span>
             <svg class="sm-list__svg" width="15" height="15">
               <use xlink:href="#icon-pinterest"></use>
             </svg>
@@ -536,7 +209,6 @@
         </li>
         <li class="sm-list__element">
             <a class="sm-list__link sm-list__svg--twitter" href="/blank.html">
-              <span class="visually-hidden">Our Twitter</span>
               <svg class="sm-list__svg" width="15" height="13">
                 <use xlink:href="#icon-twitter"></use>
               </svg>

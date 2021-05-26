@@ -305,3 +305,11 @@
     margin-bottom: 20px;
   }
 }
+
+.cart-modal__button--fill {
+  &:focus,
+  &:hover,
+  &:active {
+    padding: 22.5px;
+  }
+}

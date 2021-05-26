@@ -1,16 +1,10 @@
 .product-card {
-  /* outline: 1px solid greenyellow;
-  width: 270px; */
-  /* align-items: ; */
-  /* height: max-content; */
   height: 100%;
-  /* padding: 1px; */
 
   width: 100%;
 }
 
 .product-card__link {
-  /* max-width: 270px; */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -49,7 +43,6 @@
 
   &:hover,
   &:focus {
-    /* outline: 1px solid $layout-brown; */
     text-decoration: underline;
   }
 
@@ -75,7 +68,6 @@
   width: 100%;
 
   img {
-    /* outline: 1px solid red; */
     display: block;
     height: 284px;
     object-fit: cover;

@@ -20,7 +20,7 @@
   }
 
   @media (max-width: $desktop-width) {
-    display: block;
+    display: none;
     width: 442px;
     position: absolute;
     background-color: $layout-white;
@@ -39,6 +39,12 @@
     width: 270px;
     top: 108px;
     left: 15px;
+  }
+}
+
+.filter-form--open {
+  @media (max-width: $desktop-width) {
+    display: block;
   }
 }
 
@@ -138,6 +144,10 @@
   transform: rotate(180deg);
 }
 
+.filter-form__restore-button--no-js {
+  display: none;
+}
+
 .filter-form__svg {
   fill: transparent;
   stroke: $layout-brown;
@@ -157,6 +167,10 @@
   @include clear-lists-style;
   margin-top: 30px;
   padding-left: 10px;
+}
+
+.filter-form__list--no-js {
+  display: block;
 }
 
 .filter-form__list-element {

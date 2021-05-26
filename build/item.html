@@ -7,16 +7,10 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/cormorant-garamond-v10-latin-ext-400-italic.woff2" as="font" type="font/woff2">
   <link rel="preload" href="fonts/cormorant-garamond-v10-latin-ext-400-italic.woff" as="font" type="font/woff">
-  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-ext-600.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-ext-600.woff" as="font" type="font/woff">
   <link rel="preload" href="fonts/cormorant-garamond-v10-latin-ext-700.woff2" as="font" type="font/woff2">
   <link rel="preload" href="fonts/cormorant-garamond-v10-latin-ext-700.woff" as="font" type="font/woff">
-  <link rel="preload" href="fonts/poppins-v15-latin-ext-400.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/poppins-v15-latin-ext-400.woff" as="font" type="font/woff">
   <link rel="preload" href="fonts/poppins-v15-latin-ext-500.woff2" as="font" type="font/woff2">
   <link rel="preload" href="fonts/poppins-v15-latin-ext-500.woff" as="font" type="font/woff">
-  <link rel="preload" href="fonts/poppins-v15-latin-ext-700.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/poppins-v15-latin-ext-700.woff" as="font" type="font/woff">
   <title>CH</title>
 </head>
 <body class="page-body">
@@ -76,7 +70,7 @@
 
   <header class="page-header">
     <div class="page-header__top-wrapper">
-      <a class="logo">
+      <a class="logo" href="/index.html">
         <picture>
           <source srcset="img/logo-menu.svg" media="(max-width: 1023px)">
           <img src="img/logo.svg" alt="Логотип CH" width="66" height="66">
@@ -87,13 +81,14 @@
         <input type="search" id="header-search" name="header-search" placeholder="Type here to search" aria-label="Поиск по сайту">
       </form>
       <button class="page-header__burger-button">
+        <span class="visually-hidden">Open/close menu</span>
         <svg class="page-header__svg page-header__svg--burger" width="25" height="16">
           <use xlink:href="#icon-burger"></use>
         </svg>
       </button>
       <div class="page-header__cart-wrapper">
-        <a class="login-button" href="">Login</a>
-        <a class="cart-button" href="">
+        <a class="login-button" href="/login.html">Login</a>
+        <a class="cart-button" href="/blank.html">
           <svg class="page-header__svg page-header__svg--cart" width="18" height="16">
             <use xlink:href="#icon-cart"></use>
           </svg>
@@ -109,39 +104,40 @@
         </form>
         <ul class="nav-list">
           <li class="nav-list__element">
-            <a class="nav-list__link" href="">What’s new</a>
+            <a class="nav-list__link" href="/item.html">What’s new</a>
           </li>
           <li class="nav-list__element">
-            <a class="nav-list__link" href="">Chokers</a>
+            <a class="nav-list__link" href="/item.html">Chokers</a>
           </li>
           <li class="nav-list__element">
-            <a class="nav-list__link" href="">Necklaces</a>
+            <a class="nav-list__link" href="/item.html">Necklaces</a>
           </li>
           <li class="nav-list__element">
-            <a class="nav-list__link" href="">Rings</a>
+            <a class="nav-list__link" href="/item.html">Rings</a>
           </li>
           <li class="nav-list__element">
-            <a class="nav-list__link" href="">Earrings</a>
+            <a class="nav-list__link" href="/item.html">Earrings</a>
           </li>
         </ul>
         <ul class="nav-list nav-list-additional">
           <li class="nav-list__element nav-list__element--additional">
-            <a class="nav-list__link nav-list__link--additional" href="">About CH</a>
+            <a class="nav-list__link nav-list__link--additional" href="/blank.html">About CH</a>
           </li>
           <li class="nav-list__element nav-list__element--additional">
-            <a class="nav-list__link nav-list__link--additional" href="">Stores & Hours</a>
+            <a class="nav-list__link nav-list__link--additional" href="/blank.html">Stores & Hours</a>
           </li>
           <li class="nav-list__element nav-list__element--additional">
-            <a class="nav-list__link nav-list__link--additional" href="">Contact Us</a>
+            <a class="nav-list__link nav-list__link--additional" href="/blank.html">Contact Us</a>
           </li>
         </ul>
-        <a class="login-button login-button--tablet" href="">Login</a>
+        <a class="login-button login-button--tablet" href="/login.html">Login</a>
       </nav>
     </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Item description</h1>
     <section class="item-description">
+        <h2 class="visually-hidden">Item card</h2>
         <ul class="item-gallery item-description__gallery">
             <li class="item-gallery__element">
                 <!-- 1х: 100px; 2x: 200px -->
@@ -193,7 +189,7 @@
                     <p>18” / 20”</p>
                 </div>
             </div>
-            <a class="common-button item-features__button" href="">Add to cart</a>
+            <a class="common-button item-features__button" href="/blank.html">Add to cart</a>
             <div class="item-features__additional-info">
                 <p>14 Day Returns</p>
                 <p>2-Year Warranty</p>
@@ -220,7 +216,7 @@
             <ul class="swiper-wrapper swiper__slides-wrapper">
               <li class="swiper-slide swiper__slide">
                 <article class="product-card">
-                  <a class="product-card__link" href="">
+                  <a class="product-card__link" href="/item.html">
                     <h3>Necklace with amethyst</h3>
                     <p>$ 145</p>
                     <div class="product-card__img-wrapper product-card__img-wrapper--slider">
@@ -235,7 +231,7 @@
               </li>
               <li class="swiper-slide swiper__slide">
                 <article class="product-card">
-                  <a class="product-card__link" href="">
+                  <a class="product-card__link" href="/item.html">
                     <h3>Layered сhoker</h3>
                     <p>$ 115</p>
                     <div class="product-card__img-wrapper product-card__img-wrapper--slider">
@@ -250,7 +246,7 @@
               </li>
               <li class="swiper-slide swiper__slide">
                 <article class="product-card">
-                  <a class="product-card__link" href="">
+                  <a class="product-card__link" href="/item.html">
                     <h3>Gold chain</h3>
                     <p>$ 215</p>
                     <div class="product-card__img-wrapper product-card__img-wrapper--long-position product-card__img-wrapper--slider">
@@ -265,7 +261,7 @@
               </li>
               <li class="swiper-slide swiper__slide">
                 <article class="product-card">
-                  <a class="product-card__link" href="">
+                  <a class="product-card__link" href="/item.html">
                     <h3>Galaxy earrings</h3>
                     <p>$ 95</p>
                     <div class="product-card__img-wrapper product-card__img-wrapper--slider">
@@ -280,7 +276,7 @@
               </li>
               <li class="swiper-slide swiper__slide">
                 <article class="product-card">
-                  <a class="product-card__link" href="">
+                  <a class="product-card__link" href="/item.html">
                     <h3>Necklace with amethyst</h3>
                     <p>$ 145</p>
                     <div class="product-card__img-wrapper product-card__img-wrapper--slider">
@@ -295,7 +291,7 @@
               </li>
               <li class="swiper-slide swiper__slide">
                 <article class="product-card">
-                  <a class="product-card__link" href="">
+                  <a class="product-card__link" href="/item.html">
                     <h3>Layered сhoker</h3>
                     <p>$ 115</p>
                     <div class="product-card__img-wrapper product-card__img-wrapper--slider">
@@ -310,7 +306,7 @@
               </li>
               <li class="swiper-slide swiper__slide">
                 <article class="product-card">
-                  <a class="product-card__link" href="">
+                  <a class="product-card__link" href="/item.html">
                     <h3>Gold chain</h3>
                     <p>$ 215</p>
                     <div class="product-card__img-wrapper product-card__img-wrapper--long-position product-card__img-wrapper--slider">
@@ -325,7 +321,7 @@
               </li>
               <li class="swiper-slide swiper__slide">
                 <article class="product-card">
-                  <a class="product-card__link" href="">
+                  <a class="product-card__link" href="/item.html">
                     <h3>Galaxy earrings</h3>
                     <p>$ 95</p>
                     <div class="product-card__img-wrapper product-card__img-wrapper--slider">
@@ -340,7 +336,7 @@
               </li>
               <li class="swiper-slide swiper__slide">
                 <article class="product-card">
-                  <a class="product-card__link" href="">
+                  <a class="product-card__link" href="/item.html">
                     <h3>Necklace with amethyst</h3>
                     <p>$ 145</p>
                     <div class="product-card__img-wrapper product-card__img-wrapper--slider">
@@ -355,7 +351,7 @@
               </li>
               <li class="swiper-slide swiper__slide">
                 <article class="product-card">
-                  <a class="product-card__link" href="">
+                  <a class="product-card__link" href="/item.html">
                     <h3>Layered сhoker</h3>
                     <p>$ 115</p>
                     <div class="product-card__img-wrapper product-card__img-wrapper--slider">
@@ -370,7 +366,7 @@
               </li>
               <li class="swiper-slide swiper__slide">
                 <article class="product-card">
-                  <a class="product-card__link" href="">
+                  <a class="product-card__link" href="/item.html">
                     <h3>Gold chain</h3>
                     <p>$ 215</p>
                     <div class="product-card__img-wrapper product-card__img-wrapper--long-position product-card__img-wrapper--slider">
@@ -385,7 +381,7 @@
               </li>
               <li class="swiper-slide swiper__slide">
                 <article class="product-card">
-                  <a class="product-card__link" href="">
+                  <a class="product-card__link" href="/item.html">
                     <h3>Galaxy earrings</h3>
                     <p>$ 95</p>
                     <div class="product-card__img-wrapper product-card__img-wrapper--slider">
@@ -420,30 +416,30 @@
     <nav class="about-us-info">
       <ul class="about-us-list">
         <li class="about-us-list__element">
-          <a class="about-us-list__link" href="">Ordering & Payment</a>
+          <a class="about-us-list__link" href="/blank.html">Ordering & Payment</a>
         </li>
         <li class="about-us-list__element">
-          <a class="about-us-list__link" href="">Terms & Conditions</a>
+          <a class="about-us-list__link" href="/blank.html">Terms & Conditions</a>
         </li>
         <li class="about-us-list__element">
-          <a class="about-us-list__link" href="">Returns & Exchanges</a>
+          <a class="about-us-list__link" href="/blank.html">Returns & Exchanges</a>
         </li>
         <li class="about-us-list__element">
-          <a class="about-us-list__link" href="">Delivery</a>
+          <a class="about-us-list__link" href="/blank.html">Delivery</a>
         </li>
       </ul>
       <ul class="about-us-list about-us-list--middle">
         <li class="about-us-list__element">
-            <a class="about-us-list__link" href="">About CH</a>
+            <a class="about-us-list__link" href="/blank.html">About CH</a>
           </li>
           <li class="about-us-list__element">
-            <a class="about-us-list__link" href="">Stores & Hours</a>
+            <a class="about-us-list__link" href="/blank.html">Stores & Hours</a>
           </li>
           <li class="about-us-list__element">
-            <a class="about-us-list__link" href="">Jobs</a>
+            <a class="about-us-list__link" href="/blank.html">Jobs</a>
           </li>
           <li class="about-us-list__element">
-            <a class="about-us-list__link" href="">Contact Us</a>
+            <a class="about-us-list__link" href="/blank.html">Contact Us</a>
           </li>
       </ul>
     </nav>
@@ -451,7 +447,8 @@
       <h2 class="visually-hidden">Our socials</h2>
       <ul class="sm-list">
         <li class="sm-list__element">
-          <a class="sm-list__link" href="">
+          <a class="sm-list__link" href="/blank.html">
+          <span class="visually-hidden">Our Facebook</span>
             <svg class="sm-list__svg sm-list__svg--facebook" width="8" height="15">
               <use xlink:href="#icon-facebook"></use>
             </svg>
@@ -459,7 +456,8 @@
           </a>
         </li>
         <li class="sm-list__element">
-          <a class="sm-list__link" href="">
+          <a class="sm-list__link" href="/blank.html">
+          <span class="visually-hidden">Our Instagram</span>
             <svg class="sm-list__svg" width="15" height="15">
               <use xlink:href="#icon-instagram"></use>
             </svg>
@@ -467,7 +465,8 @@
           </a>
         </li>
         <li class="sm-list__element">
-          <a class="sm-list__link" href="">
+          <a class="sm-list__link" href="/blank.html">
+          <span class="visually-hidden">Our Pinterest</span>
             <svg class="sm-list__svg" width="15" height="15">
               <use xlink:href="#icon-pinterest"></use>
             </svg>
@@ -475,7 +474,8 @@
           </a>
         </li>
         <li class="sm-list__element">
-            <a class="sm-list__link sm-list__svg--twitter" href="">
+            <a class="sm-list__link sm-list__svg--twitter" href="/blank.html">
+            <span class="visually-hidden">Our Twitter</span>
               <svg class="sm-list__svg" width="15" height="13">
                 <use xlink:href="#icon-twitter"></use>
               </svg>
@@ -517,8 +517,8 @@
                 <p>Cart subtotal: $ 115</p>
             </div>
             <div class="cart-modal__button-wrapper">
-                <a class="common-button common-button--reversed cart-modal__button" href="">Continue shopping</a>
-                <a class="common-button" href="">Checkout</a>
+                <a class="common-button common-button--reversed cart-modal__button cart-modal__button--js-continue" href="/item.html">Continue shopping</a>
+                <a class="common-button cart-modal__button--fill" href="/blank.html">Checkout</a>
             </div>
         <button type="button" class="cart-modal__close-button" name="close-modal" aria-label="Close pop-up"></button>
     </div>
@@ -536,21 +536,21 @@
         <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="login-form__fieldset">
             <div class="login-form__wrapper">
-              <label class="visually-hidden" for="email">Your E-mail</label>
-              <input id="email" name="email" type="email" placeholder="Your E-mail" required="">
+              <label class="visually-hidden" for="modalEmail">Your E-mail</label>
+              <input id="modalEmail" name="modalEmail" type="email" placeholder="Your E-mail" required="">
             </div>
             <div class="login-form__wrapper">
               <label class="visually-hidden" for="password">Password</label>
               <input id="password" name="password" type="password" placeholder="Password" required="">
-              <a class="login-form__link" href="">Forgot your password?</a>
+              <a class="login-form__link" href="/blank.html">Forgot your password?</a>
             </div>
           </fieldset>
           <button class="common-button login-form__submit" type="submit">Log In</button>
         </form>
         <button type="button" class="login-modal__close-button" name="close-modal" aria-label="Close pop-up"></button>
         <div class="login-modal__link-wrapper">
-          <a class="login-form__link login-form__link--accaount" href="">Don’t have an account?</a>
-          <a class="login-form__link login-form__link--signup" href="">Sign up</a>
+          <a class="login-form__link login-form__link--accaount" href="/blank.html">Don’t have an account?</a>
+          <a class="login-form__link login-form__link--signup" href="/blank.html">Sign up</a>
         </div>
     </div>
   </section>

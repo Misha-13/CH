@@ -71,6 +71,12 @@
 
 .item-features__button {
   margin-bottom: 20px;
+
+  &:focus,
+  &:hover,
+  &:active {
+    padding: 22.5px;
+  }
 }
 
 .item-features__additional-info {

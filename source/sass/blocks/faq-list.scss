@@ -26,6 +26,7 @@
   }
 
   p {
+    display: none;
     width: 530px;
     font-family: $default-font;
     font-weight: 400;
@@ -59,6 +60,18 @@
   }
 }
 
+.faq-list__element--selected {
+  p {
+    display: block;
+  }
+}
+
+.faq-list__element--no-js {
+  p {
+    display: block;
+  }
+}
+
 .faq-list__link {
   position: absolute;
   display: block;
@@ -86,6 +99,10 @@
 
 .faq-list__link--selected {
   transform: rotate(180deg);
+}
+
+.faq-list__link--no-js {
+  display: none;
 }
 
 .faq-list__svg {

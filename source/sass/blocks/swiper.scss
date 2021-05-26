@@ -1,9 +1,10 @@
 .swiper {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
   width: 100%;
   margin-top: -55px;
+}
+
+.swiper--no-js {
+  display: none;
 }
 
 .swiper__navigation {
@@ -48,13 +49,6 @@
   @include clear-lists-style;
   width: 100%;
   height: max-content;
-  /* display: grid; */
-
-  /* grid-template-columns: auto auto auto auto; */
-
-  /* grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: max-content;
-  gap: 30px; */
   margin-bottom: 60px;
 }
 
@@ -72,13 +66,8 @@
 }
 
 .swiper__pagination-element {
-  /* margin-right: 15px; */
   margin-right: 7px;
   margin-left: 7px;
-
-  /* &:last-child {
-    margin-right: 0;
-  } */
 }
 
 .swiper__pagination-element--current {

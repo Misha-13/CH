@@ -36,8 +36,6 @@
 }
 
 .catalog__pagination {
-  /* display: flex; */
-  /* justify-content: space-between; */
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
@@ -58,8 +56,6 @@
   margin: 0;
 
   display: flex;
-  /* padding-left: 10px;
-  padding-right: 15px; */
 }
 
 .catalog__pagination-list-element {
@@ -122,5 +118,11 @@
 
   @media (max-width: $tablet-width) {
     margin-bottom: 40px;
+  }
+}
+
+.catalog__filter-button--no-js {
+  @media (max-width: $desktop-width) {
+    display: none;
   }
 }

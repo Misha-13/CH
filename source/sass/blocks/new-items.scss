@@ -29,6 +29,10 @@
   }
 }
 
+.new-items--no-js {
+  display: none;
+}
+
 .new-items__extra-link {
   text-decoration: none;
   font-family: $default-font;

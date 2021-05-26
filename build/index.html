@@ -7,16 +7,10 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/cormorant-garamond-v10-latin-ext-400-italic.woff2" as="font" type="font/woff2">
   <link rel="preload" href="fonts/cormorant-garamond-v10-latin-ext-400-italic.woff" as="font" type="font/woff">
-  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-ext-600.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-ext-600.woff" as="font" type="font/woff">
   <link rel="preload" href="fonts/cormorant-garamond-v10-latin-ext-700.woff2" as="font" type="font/woff2">
   <link rel="preload" href="fonts/cormorant-garamond-v10-latin-ext-700.woff" as="font" type="font/woff">
-  <link rel="preload" href="fonts/poppins-v15-latin-ext-400.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/poppins-v15-latin-ext-400.woff" as="font" type="font/woff">
   <link rel="preload" href="fonts/poppins-v15-latin-ext-500.woff2" as="font" type="font/woff2">
   <link rel="preload" href="fonts/poppins-v15-latin-ext-500.woff" as="font" type="font/woff">
-  <link rel="preload" href="fonts/poppins-v15-latin-ext-700.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/poppins-v15-latin-ext-700.woff" as="font" type="font/woff">
   <title>CH</title>
 </head>
 <body class="page-body">
@@ -87,13 +81,15 @@
         <input type="search" id="header-search" name="header-search" placeholder="Type here to search" aria-label="Поиск по сайту">
       </form>
       <button class="page-header__burger-button">
+        <span class="visually-hidden">Open/close menu</span>
         <svg class="page-header__svg page-header__svg--burger" width="25" height="16">
           <use xlink:href="#icon-burger"></use>
         </svg>
       </button>
       <div class="page-header__cart-wrapper">
-        <a class="login-button" href="">Login</a>
-        <a class="cart-button" href="">
+        <a class="login-button" href="/login.html">Login</a>
+        <a class="cart-button" href="/blank.html">
+          <span class="visually-hidden">Open cart</span>
           <svg class="page-header__svg page-header__svg--cart" width="18" height="16">
             <use xlink:href="#icon-cart"></use>
           </svg>
@@ -109,33 +105,33 @@
         </form>
         <ul class="nav-list">
           <li class="nav-list__element">
-            <a class="nav-list__link" href="">What’s new</a>
+            <a class="nav-list__link" href="/catalog.html">What’s new</a>
           </li>
           <li class="nav-list__element">
-            <a class="nav-list__link" href="">Chokers</a>
+            <a class="nav-list__link" href="/catalog.html">Chokers</a>
           </li>
           <li class="nav-list__element">
-            <a class="nav-list__link" href="">Necklaces</a>
+            <a class="nav-list__link" href="/catalog.html">Necklaces</a>
           </li>
           <li class="nav-list__element">
-            <a class="nav-list__link" href="">Rings</a>
+            <a class="nav-list__link" href="/catalog.html">Rings</a>
           </li>
           <li class="nav-list__element">
-            <a class="nav-list__link" href="">Earrings</a>
+            <a class="nav-list__link" href="/catalog.html">Earrings</a>
           </li>
         </ul>
         <ul class="nav-list nav-list-additional">
           <li class="nav-list__element nav-list__element--additional">
-            <a class="nav-list__link nav-list__link--additional" href="">About CH</a>
+            <a class="nav-list__link nav-list__link--additional" href="/blank.html">About CH</a>
           </li>
           <li class="nav-list__element nav-list__element--additional">
-            <a class="nav-list__link nav-list__link--additional" href="">Stores & Hours</a>
+            <a class="nav-list__link nav-list__link--additional" href="/blank.html">Stores & Hours</a>
           </li>
           <li class="nav-list__element nav-list__element--additional">
-            <a class="nav-list__link nav-list__link--additional" href="">Contact Us</a>
+            <a class="nav-list__link nav-list__link--additional" href="/blank.html">Contact Us</a>
           </li>
         </ul>
-        <a class="login-button login-button--tablet" href="">Login</a>
+        <a class="login-button login-button--tablet" href="/login.html">Login</a>
       </nav>
     </div>
   </header>
@@ -156,10 +152,10 @@
         </picture>
       </div>
     </section>
-    <section class="new-items">
+    <section class="new-items new-items--no-js">
       <h2>New In</h2>
       <a class="new-items__extra-link" href="catalog.html">Shop Now</a>
-      <div class="swiper-container swiper">
+      <div class="swiper-container swiper swiper--no-js">
           <div class="swiper__navigation">
             <a class="swiper-button-prev swiper__button swiper__button--previous">
               <svg class="swiper__svg" width="25" height="16">
@@ -175,7 +171,7 @@
           <ul class="swiper-wrapper swiper__slides-wrapper">
             <li class="swiper-slide swiper__slide">
               <article class="product-card">
-                <a class="product-card__link" href="">
+                <a class="product-card__link" href="/item.html">
                   <h3>Necklace with amethyst</h3>
                   <p>$ 145</p>
                   <div class="product-card__img-wrapper product-card__img-wrapper--slider">
@@ -190,7 +186,7 @@
             </li>
             <li class="swiper-slide swiper__slide">
               <article class="product-card">
-                <a class="product-card__link" href="">
+                <a class="product-card__link" href="/item.html">
                   <h3>Layered сhoker</h3>
                   <p>$ 115</p>
                   <div class="product-card__img-wrapper product-card__img-wrapper--slider">
@@ -205,7 +201,7 @@
             </li>
             <li class="swiper-slide swiper__slide">
               <article class="product-card">
-                <a class="product-card__link" href="">
+                <a class="product-card__link" href="/item.html">
                   <h3>Gold chain</h3>
                   <p>$ 215</p>
                   <div class="product-card__img-wrapper product-card__img-wrapper--long-position product-card__img-wrapper--slider">
@@ -220,7 +216,7 @@
             </li>
             <li class="swiper-slide swiper__slide">
               <article class="product-card">
-                <a class="product-card__link" href="">
+                <a class="product-card__link" href="/item.html">
                   <h3>Galaxy earrings</h3>
                   <p>$ 95</p>
                   <div class="product-card__img-wrapper product-card__img-wrapper--slider">
@@ -235,7 +231,7 @@
             </li>
             <li class="swiper-slide swiper__slide">
               <article class="product-card">
-                <a class="product-card__link" href="">
+                <a class="product-card__link" href="/item.html">
                   <h3>Necklace with amethyst</h3>
                   <p>$ 145</p>
                   <div class="product-card__img-wrapper product-card__img-wrapper--slider">
@@ -250,7 +246,7 @@
             </li>
             <li class="swiper-slide swiper__slide">
               <article class="product-card">
-                <a class="product-card__link" href="">
+                <a class="product-card__link" href="/item.html">
                   <h3>Layered сhoker</h3>
                   <p>$ 115</p>
                   <div class="product-card__img-wrapper product-card__img-wrapper--slider">
@@ -265,7 +261,7 @@
             </li>
             <li class="swiper-slide swiper__slide">
               <article class="product-card">
-                <a class="product-card__link" href="">
+                <a class="product-card__link" href="/item.html">
                   <h3>Gold chain</h3>
                   <p>$ 215</p>
                   <div class="product-card__img-wrapper product-card__img-wrapper--long-position product-card__img-wrapper--slider">
@@ -280,7 +276,7 @@
             </li>
             <li class="swiper-slide swiper__slide">
               <article class="product-card">
-                <a class="product-card__link" href="">
+                <a class="product-card__link" href="/item.html">
                   <h3>Galaxy earrings</h3>
                   <p>$ 95</p>
                   <div class="product-card__img-wrapper product-card__img-wrapper--slider">
@@ -295,7 +291,7 @@
             </li>
             <li class="swiper-slide swiper__slide">
               <article class="product-card">
-                <a class="product-card__link" href="">
+                <a class="product-card__link" href="/item.html">
                   <h3>Necklace with amethyst</h3>
                   <p>$ 145</p>
                   <div class="product-card__img-wrapper product-card__img-wrapper--slider">
@@ -310,7 +306,7 @@
             </li>
             <li class="swiper-slide swiper__slide">
               <article class="product-card">
-                <a class="product-card__link" href="">
+                <a class="product-card__link" href="/item.html">
                   <h3>Layered сhoker</h3>
                   <p>$ 115</p>
                   <div class="product-card__img-wrapper product-card__img-wrapper--slider">
@@ -325,7 +321,7 @@
             </li>
             <li class="swiper-slide swiper__slide">
               <article class="product-card">
-                <a class="product-card__link" href="">
+                <a class="product-card__link" href="/item.html">
                   <h3>Gold chain</h3>
                   <p>$ 215</p>
                   <div class="product-card__img-wrapper product-card__img-wrapper--long-position product-card__img-wrapper--slider">
@@ -340,7 +336,7 @@
             </li>
             <li class="swiper-slide swiper__slide">
               <article class="product-card">
-                <a class="product-card__link" href="">
+                <a class="product-card__link" href="/item.html">
                   <h3>Galaxy earrings</h3>
                   <p>$ 95</p>
                   <div class="product-card__img-wrapper product-card__img-wrapper--slider">
@@ -354,35 +350,12 @@
               </article>
             </li>
           </ul>
-          <!-- <ul class="swiper-pagination swiper__pagination">
-            <li class="swiper-pagination-bullet swiper__pagination-element swiper__pagination-element--current">
-              <a class="swiper__pagination-link" href="">1</a>
-            </li>
-            <li class="swiper__pagination-element">
-              <a class="swiper__pagination-link" href="">2</a>
-            </li>
-            <li class="swiper__pagination-element">
-              <a class="swiper__pagination-link" href="">3</a>
-            </li>
-            <li class="swiper__pagination-element swiper__pagination-element--tablet">
-              <a class="swiper__pagination-link" href="">4</a>
-            </li>
-            <li class="swiper__pagination-element swiper__pagination-element--tablet">
-              <a class="swiper__pagination-link" href="">5</a>
-            </li>
-            <li class="swiper__pagination-element swiper__pagination-element--tablet">
-              <a class="swiper__pagination-link" href="">6</a>
-            </li>
-          </ul> -->
           <div class="swiper-pagination"></div>
-          <!-- <div class="slider-mobile-pagination">
-            <p><span class="slider-mobile-pagination__current">1</span> of <span class="slider-mobile-pagination__total">6</span></p>
-          </div> -->
       </div>
     </section>
     <section class="blog">
       <h2>Blog</h2>
-      <a class="blog__extra-link" href="">Read All</a>
+      <a class="blog__extra-link" href="/blank.html">Read All</a>
       <ul class="article-list">
         <li class="article-list__element">
           <article class="preview-article">
@@ -396,7 +369,7 @@
             <div class="preview-article__info-wrapper">
               <h3>How to care for your jewellery</h3>
               <p>September 30, 2019</p>
-              <a class="preview-article__read-more-link" href="">Read Article</a>
+              <a class="preview-article__read-more-link" href="/blank.html">Read Article</a>
             </div>
           </article>
         </li>
@@ -412,7 +385,7 @@
             <div class="preview-article__info-wrapper">
               <h3>Power of crystals</h3>
               <p>September 23, 2019</p>
-              <a class="preview-article__read-more-link" href="">Read Article</a>
+              <a class="preview-article__read-more-link" href="/blank.html">Read Article</a>
             </div>
           </article>
         </li>
@@ -428,7 +401,7 @@
             <div class="preview-article__info-wrapper preview-article__info-wrapper--big">
               <h3>AW 19 trends</h3>
               <p>September 16, 2019</p>
-              <a class="preview-article__read-more-link" href="">Read Article</a>
+              <a class="preview-article__read-more-link" href="/blank.html">Read Article</a>
             </div>
           </article>
         </li>
@@ -437,37 +410,41 @@
     <section class="faq">
       <h2>Frequently asked questions</h2>
       <ul class="faq-list">
-        <li class="faq-list__element">
+        <li class="faq-list__element faq-list__element--no-js">
           <h3>What materials are the jewellery made of?</h3>
           <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
-          <a class="faq-list__link faq-list__link--selected" href="">
+          <a class="faq-list__link faq-list__link--no-js" href="/blank.html">
+            <span class="visually-hidden">Open/close menu</span>
             <svg class="faq-list__svg" width="15" height="8">
               <use xlink:href="#icon-arrow-down"></use>
             </svg>
           </a>
         </li>
-        <li class="faq-list__element">
+        <li class="faq-list__element faq-list__element--no-js">
           <h3>Which countries do you deliver to?</h3>
-          <p style="display: none;">Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
-          <a class="faq-list__link" href="">
+          <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+          <a class="faq-list__link faq-list__link--no-js" href="/blank.html">
+            <span class="visually-hidden">Open/close menu</span>
             <svg class="faq-list__svg" width="15" height="8">
               <use xlink:href="#icon-arrow-down"></use>
             </svg>
           </a>
         </li>
-        <li class="faq-list__element">
+        <li class="faq-list__element faq-list__element--no-js">
           <h3>What are the payment methods?</h3>
-          <p style="display: none;">Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
-          <a class="faq-list__link" href="">
+          <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+          <a class="faq-list__link faq-list__link--no-js" href="/blank.html">
+            <span class="visually-hidden">Open/close menu</span>
             <svg class="faq-list__svg" width="15" height="8">
               <use xlink:href="#icon-arrow-down"></use>
             </svg>
           </a>
         </li>
-        <li class="faq-list__element">
+        <li class="faq-list__element faq-list__element--no-js">
           <h3>Can I return the jewellery if it didn’t fit me?</h3>
-          <p style="display: none;">Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
-          <a class="faq-list__link" href="">
+          <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+          <a class="faq-list__link faq-list__link--no-js" href="/blank.html">
+            <span class="visually-hidden">Open/close menu</span>
             <svg class="faq-list__svg" width="15" height="8">
               <use xlink:href="#icon-arrow-down"></use>
             </svg>
@@ -477,7 +454,7 @@
     </section>
     <section class="company-info">
       <h2><span class="company-info__special-symbol">@</span>Chjewellery</h2>
-      <a class="company-info__fillow-us-link" href="">Follow Us</a>
+      <a class="company-info__fillow-us-link" href="/blank.html">Follow Us</a>
       <ul class="gallery">
         <li class="gallery__element">
           <div class="gallery__img-wrapper">
@@ -562,30 +539,30 @@
     <nav class="about-us-info">
       <ul class="about-us-list">
         <li class="about-us-list__element">
-          <a class="about-us-list__link" href="">Ordering & Payment</a>
+          <a class="about-us-list__link" href="/blank.html">Ordering & Payment</a>
         </li>
         <li class="about-us-list__element">
-          <a class="about-us-list__link" href="">Terms & Conditions</a>
+          <a class="about-us-list__link" href="/blank.html">Terms & Conditions</a>
         </li>
         <li class="about-us-list__element">
-          <a class="about-us-list__link" href="">Returns & Exchanges</a>
+          <a class="about-us-list__link" href="/blank.html">Returns & Exchanges</a>
         </li>
         <li class="about-us-list__element">
-          <a class="about-us-list__link" href="">Delivery</a>
+          <a class="about-us-list__link" href="/blank.html">Delivery</a>
         </li>
       </ul>
       <ul class="about-us-list about-us-list--middle">
         <li class="about-us-list__element">
-            <a class="about-us-list__link" href="">About CH</a>
+            <a class="about-us-list__link" href="/blank.html">About CH</a>
           </li>
           <li class="about-us-list__element">
-            <a class="about-us-list__link" href="">Stores & Hours</a>
+            <a class="about-us-list__link" href="/blank.html">Stores & Hours</a>
           </li>
           <li class="about-us-list__element">
-            <a class="about-us-list__link" href="">Jobs</a>
+            <a class="about-us-list__link" href="/blank.html">Jobs</a>
           </li>
           <li class="about-us-list__element">
-            <a class="about-us-list__link" href="">Contact Us</a>
+            <a class="about-us-list__link" href="/blank.html">Contact Us</a>
           </li>
       </ul>
     </nav>
@@ -593,7 +570,8 @@
       <h2 class="visually-hidden">Our socials</h2>
       <ul class="sm-list">
         <li class="sm-list__element">
-          <a class="sm-list__link" href="">
+          <a class="sm-list__link" href="/blank.html">
+            <span class="visually-hidden">Our Facebook</span>
             <svg class="sm-list__svg sm-list__svg--facebook" width="8" height="15">
               <use xlink:href="#icon-facebook"></use>
             </svg>
@@ -601,7 +579,8 @@
           </a>
         </li>
         <li class="sm-list__element">
-          <a class="sm-list__link" href="">
+          <a class="sm-list__link" href="/blank.html">
+            <span class="visually-hidden">Our Instagram</span>
             <svg class="sm-list__svg" width="15" height="15">
               <use xlink:href="#icon-instagram"></use>
             </svg>
@@ -609,7 +588,8 @@
           </a>
         </li>
         <li class="sm-list__element">
-          <a class="sm-list__link" href="">
+          <a class="sm-list__link" href="/blank.html">
+            <span class="visually-hidden">Our Pinterest</span>
             <svg class="sm-list__svg" width="15" height="15">
               <use xlink:href="#icon-pinterest"></use>
             </svg>
@@ -617,7 +597,8 @@
           </a>
         </li>
         <li class="sm-list__element">
-            <a class="sm-list__link sm-list__svg--twitter" href="">
+            <a class="sm-list__link sm-list__svg--twitter" href="/blank.html">
+              <span class="visually-hidden">Our Twitter</span>
               <svg class="sm-list__svg" width="15" height="13">
                 <use xlink:href="#icon-twitter"></use>
               </svg>
@@ -627,8 +608,36 @@
       </ul>
     </section>
   </footer>
-  <section class="modal modal--close">
-
+  <section class="login-modal login-modal--close">
+    <div class="login-modal__wrapper">
+        <div class="login-modal__promo">
+          <!-- 1х: 270px; 2x: 540px -->
+          <picture>
+            <source srcset="img/sweet-ice-cream-photography-unsplash.webp 1x, img/sweet-ice-cream-photography-unsplash@2x.webp 2x" type="image/webp">
+            <img src="img/sweet-ice-cream-photography-unsplash.jpg" srcset="img/sweet-ice-cream-photography-unsplash@2x.jpg 2x" loading="lazy" alt="Sweet ice cream photography unsplash" width="270" height="284">
+          </picture>
+        </div>
+        <h2>Log In</h2>
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="login-form__fieldset">
+            <div class="login-form__wrapper">
+              <label class="visually-hidden" for="modalEmail">Your E-mail</label>
+              <input id="modalEmail" name="modalEmail" type="email" placeholder="Your E-mail" required="">
+            </div>
+            <div class="login-form__wrapper">
+              <label class="visually-hidden" for="password">Password</label>
+              <input id="password" name="password" type="password" placeholder="Password" required="">
+              <a class="login-form__link" href="/blank.html">Forgot your password?</a>
+            </div>
+          </fieldset>
+          <button class="common-button login-form__submit" type="submit">Log In</button>
+        </form>
+        <button type="button" class="login-modal__close-button" name="close-modal" aria-label="Close pop-up"></button>
+        <div class="login-modal__link-wrapper">
+          <a class="login-form__link login-form__link--accaount" href="/blank.html">Don’t have an account?</a>
+          <a class="login-form__link login-form__link--signup" href="/blank.html">Sign up</a>
+        </div>
+    </div>
   </section>
   <script src="js/vendor.js"></script>
   <script src="js/script.js"></script>

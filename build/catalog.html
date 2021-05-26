@@ -7,16 +7,10 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/cormorant-garamond-v10-latin-ext-400-italic.woff2" as="font" type="font/woff2">
   <link rel="preload" href="fonts/cormorant-garamond-v10-latin-ext-400-italic.woff" as="font" type="font/woff">
-  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-ext-600.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-ext-600.woff" as="font" type="font/woff">
   <link rel="preload" href="fonts/cormorant-garamond-v10-latin-ext-700.woff2" as="font" type="font/woff2">
   <link rel="preload" href="fonts/cormorant-garamond-v10-latin-ext-700.woff" as="font" type="font/woff">
-  <link rel="preload" href="fonts/poppins-v15-latin-ext-400.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/poppins-v15-latin-ext-400.woff" as="font" type="font/woff">
   <link rel="preload" href="fonts/poppins-v15-latin-ext-500.woff2" as="font" type="font/woff2">
   <link rel="preload" href="fonts/poppins-v15-latin-ext-500.woff" as="font" type="font/woff">
-  <link rel="preload" href="fonts/poppins-v15-latin-ext-700.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/poppins-v15-latin-ext-700.woff" as="font" type="font/woff">
   <title>CH</title>
 </head>
 <body class="page-body">
@@ -76,7 +70,7 @@
 
   <header class="page-header">
     <div class="page-header__top-wrapper">
-      <a class="logo">
+      <a class="logo" href="/index.html">
         <picture>
           <source srcset="img/logo-menu.svg" media="(max-width: 1023px)">
           <img src="img/logo.svg" alt="Логотип CH" width="66" height="66">
@@ -87,13 +81,14 @@
         <input type="search" id="header-search" name="header-search" placeholder="Type here to search" aria-label="Поиск по сайту">
       </form>
       <button class="page-header__burger-button">
+        <span class="visually-hidden">Open/close menu</span>
         <svg class="page-header__svg page-header__svg--burger" width="25" height="16">
           <use xlink:href="#icon-burger"></use>
         </svg>
       </button>
       <div class="page-header__cart-wrapper">
-        <a class="login-button" href="">Login</a>
-        <a class="cart-button" href="">
+        <a class="login-button" href="/login.html">Login</a>
+        <a class="cart-button" href="/blank.html">
           <svg class="page-header__svg page-header__svg--cart" width="18" height="16">
             <use xlink:href="#icon-cart"></use>
           </svg>
@@ -109,33 +104,33 @@
         </form>
         <ul class="nav-list">
           <li class="nav-list__element">
-            <a class="nav-list__link" href="">What’s new</a>
+            <a class="nav-list__link" href="/item.html">What’s new</a>
           </li>
           <li class="nav-list__element">
-            <a class="nav-list__link" href="">Chokers</a>
+            <a class="nav-list__link" href="/item.html">Chokers</a>
           </li>
           <li class="nav-list__element">
-            <a class="nav-list__link" href="">Necklaces</a>
+            <a class="nav-list__link" href="/item.html">Necklaces</a>
           </li>
           <li class="nav-list__element">
-            <a class="nav-list__link" href="">Rings</a>
+            <a class="nav-list__link" href="/item.html">Rings</a>
           </li>
           <li class="nav-list__element">
-            <a class="nav-list__link" href="">Earrings</a>
+            <a class="nav-list__link" href="/item.html">Earrings</a>
           </li>
         </ul>
         <ul class="nav-list nav-list-additional">
           <li class="nav-list__element nav-list__element--additional">
-            <a class="nav-list__link nav-list__link--additional" href="">About CH</a>
+            <a class="nav-list__link nav-list__link--additional" href="/blank.html">About CH</a>
           </li>
           <li class="nav-list__element nav-list__element--additional">
-            <a class="nav-list__link nav-list__link--additional" href="">Stores & Hours</a>
+            <a class="nav-list__link nav-list__link--additional" href="/blank.html">Stores & Hours</a>
           </li>
           <li class="nav-list__element nav-list__element--additional">
-            <a class="nav-list__link nav-list__link--additional" href="">Contact Us</a>
+            <a class="nav-list__link nav-list__link--additional" href="/blank.html">Contact Us</a>
           </li>
         </ul>
-        <a class="login-button login-button--tablet" href="">Login</a>
+        <a class="login-button login-button--tablet" href="/login.html">Login</a>
       </nav>
     </div>
   </header>
@@ -159,20 +154,20 @@
     <section class="catalog">
       <h2 class="visually-hidden">Items list</h2>
       <form action="https://echo.htmlacademy.ru" method="GET" class="filter-form">
-        <button class="filter-form__close-button">
+        <button class="filter-form__close-button" type="button">
           <svg class="filter-form__svg-close" width="32" height="32">
             <use xlink:href="#icon-round-close"></use>
           </svg>
         </button>
         <fieldset class="filter-form__fieldset">
           <h3>Product</h3>
-          <a class="filter-form__restore-button filter-form__restore-button--clicked" href="">
+          <a class="filter-form__restore-button filter-form__restore-button--clicked filter-form__restore-button--no-js" href="/blank.html">
             <p>Restore button</p>
             <svg class="filter-form__svg" width="15" height="8">
               <use xlink:href="#icon-arrow-down"></use>
             </svg>
           </a>
-          <ul class="filter-form__list">
+          <ul class="filter-form__list filter-form__list--no-js">
             <li class="filter-form__list-element">
               <input type="checkbox" name="necklaces" id="necklaces" checked="">
               <label for="necklaces" tabindex="0">Necklaces</label>
@@ -193,13 +188,13 @@
         </fieldset>
         <fieldset class="filter-form__fieldset">
           <h3>Material</h3>
-          <a class="filter-form__restore-button" href="">
+          <a class="filter-form__restore-button filter-form__restore-button--no-js" href="/blank.html">
             <p>Restore button</p>
             <svg class="filter-form__svg" width="15" height="8">
               <use xlink:href="#icon-arrow-down"></use>
             </svg>
           </a>
-          <ul class="filter-form__list filter-form__list--closed">
+          <ul class="filter-form__list filter-form__list--closed filter-form__list--no-js">
             <li class="filter-form__list-element">
               <input type="checkbox" name="gold" id="gold" checked="">
               <label for="gold" tabindex="0">Gold</label>
@@ -212,13 +207,13 @@
         </fieldset>
         <fieldset class="filter-form__fieldset">
           <h3>Collection</h3>
-          <a class="filter-form__restore-button" href="">
+          <a class="filter-form__restore-button filter-form__restore-button--no-js" href="/blank.html">
             <p>Restore button</p>
             <svg class="filter-form__svg" width="15" height="8">
               <use xlink:href="#icon-arrow-down"></use>
             </svg>
           </a>
-          <ul class="filter-form__list filter-form__list--closed">
+          <ul class="filter-form__list filter-form__list--closed filter-form__list--no-js">
             <li class="filter-form__list-element">
               <input type="checkbox" name="pink-flamingo" id="pink-flamingo" checked="">
               <label for="pink-flamingo" tabindex="0">Pink flamingo</label>
@@ -231,24 +226,26 @@
         </fieldset>
         <fieldset class="filter-form__fieldset">
           <h3>Price</h3>
-          <a class="filter-form__restore-button filter-form__restore-button--clicked" href="">
+          <a class="filter-form__restore-button filter-form__restore-button--clicked filter-form__restore-button--no-js" href="/blank.html">
             <p>Restore button</p>
             <svg class="filter-form__svg" width="15" height="8">
               <use xlink:href="#icon-arrow-down"></use>
             </svg>
           </a>
-          <div class="price-slider">
-            <div class="price-slider__line price-slider__line--low">
-              <label for="low-price">$ 55 </label>
-              <input type="text" name="low-price" id="low-price" value="55" tabindex="13">
-            </div>
-            <div class="price-slider__line price-slider__line--middle">
-              <span class="price-slider__pin price-slider__pin--low"></span>
-              <span class="price-slider__pin price-slider__pin--top"></span>
-            </div>
-            <div class="price-slider__line price-slider__line--top">
-              <label for="top-price">$ 155</label>
-              <input type="text" name="top-price" id="top-price" value="155" tabindex="14">
+          <div class="filter-form__list filter-form__list--closed filter-form__list--no-js">
+            <div class="price-slider">
+              <div class="price-slider__line price-slider__line--low">
+                <label for="low-price">$ 55 </label>
+                <input type="text" name="low-price" id="low-price" value="55" tabindex="13">
+              </div>
+              <div class="price-slider__line price-slider__line--middle">
+                <span class="price-slider__pin price-slider__pin--low"></span>
+                <span class="price-slider__pin price-slider__pin--top"></span>
+              </div>
+              <div class="price-slider__line price-slider__line--top">
+                <label for="top-price">$ 155</label>
+                <input type="text" name="top-price" id="top-price" value="155" tabindex="14">
+              </div>
             </div>
           </div>
         </fieldset>
@@ -256,11 +253,11 @@
         <button type="reset" class="common-button common-button--reversed filter-form__button">Clear All</button>
       </form>
       <div class="catalog__items-wrapper">
-        <a class="common-button catalog__filter-button" href="">Filter</a>
+        <a class="common-button catalog__filter-button catalog__filter-button--no-js" href="/blank.html">Filter</a>
         <ul class="items-list">
           <li class="items-list__element">
             <article class="product-card">
-              <a class="product-card__link" href="">
+              <a class="product-card__link" href="/item.html">
                 <h3>Double pearl earrings </h3>
                 <p>$ 115</p>
                 <div class="product-card__img-wrapper product-card__img-wrapper--catalog">
@@ -275,7 +272,7 @@
           </li>
           <li class="items-list__element">
             <article class="product-card">
-              <a class="product-card__link" href="">
+              <a class="product-card__link" href="/item.html">
                 <h3>Choker with gold bead</h3>
                 <p>$ 55</p>
                 <div class="product-card__img-wrapper product-card__img-wrapper--catalog">
@@ -290,7 +287,7 @@
           </li>
           <li class="items-list__element">
             <article class="product-card">
-              <a class="product-card__link" href="">
+              <a class="product-card__link" href="/item.html">
                 <h3>Gold layered necklace</h3>
                 <p>$ 155</p>
                 <div class="product-card__img-wrapper product-card__img-wrapper--catalog">
@@ -305,7 +302,7 @@
           </li>
           <li class="items-list__element">
             <article class="product-card">
-              <a class="product-card__link" href="">
+              <a class="product-card__link" href="/item.html">
                 <h3>Blue gemstone pendant</h3>
                 <p>$ 105</p>
                 <div class="product-card__img-wrapper product-card__img-wrapper--catalog">
@@ -320,7 +317,7 @@
           </li>
           <li class="items-list__element">
             <article class="product-card">
-              <a class="product-card__link" href="">
+              <a class="product-card__link" href="/item.html">
                 <h3>Boho earrings</h3>
                 <p>$ 75</p>
                 <div class="product-card__img-wrapper product-card__img-wrapper--catalog">
@@ -335,7 +332,7 @@
           </li>
           <li class="items-list__element">
             <article class="product-card">
-              <a class="product-card__link" href="">
+              <a class="product-card__link" href="/item.html">
                 <h3>Gold bird necklace</h3>
                 <p>$ 135</p>
                 <div class="product-card__img-wrapper product-card__img-wrapper--catalog">
@@ -350,7 +347,7 @@
           </li>
           <li class="items-list__element">
             <article class="product-card">
-              <a class="product-card__link" href="">
+              <a class="product-card__link" href="/item.html">
                 <h3>Black leather choker</h3>
                 <p>$ 85</p>
                 <div class="product-card__img-wrapper product-card__img-wrapper--catalog">
@@ -365,7 +362,7 @@
           </li>
           <li class="items-list__element">
             <article class="product-card">
-              <a class="product-card__link" href="">
+              <a class="product-card__link" href="/item.html">
                 <h3>Necklace with amethyst</h3>
                 <p>$ 145</p>
                 <div class="product-card__img-wrapper product-card__img-wrapper--catalog">
@@ -380,7 +377,7 @@
           </li>
           <li class="items-list__element">
             <article class="product-card">
-              <a class="product-card__link" href="">
+              <a class="product-card__link" href="/item.html">
                 <h3>Elephant earrings</h3>
                 <p>$ 95</p>
                 <div class="product-card__img-wrapper product-card__img-wrapper--catalog">
@@ -395,7 +392,7 @@
           </li>
           <li class="items-list__element">
             <article class="product-card">
-              <a class="product-card__link" href="">
+              <a class="product-card__link" href="/item.html">
                 <h3>Threader necklace</h3>
                 <p>$ 115</p>
                 <div class="product-card__img-wrapper product-card__img-wrapper--catalog">
@@ -410,7 +407,7 @@
           </li>
           <li class="items-list__element">
             <article class="product-card">
-              <a class="product-card__link" href="">
+              <a class="product-card__link" href="/item.html">
                 <h3>Origami crane necklace</h3>
                 <p>$ 105</p>
                 <div class="product-card__img-wrapper product-card__img-wrapper--long-position product-card__img-wrapper--catalog">
@@ -425,7 +422,7 @@
           </li>
           <li class="items-list__element">
             <article class="product-card">
-              <a class="product-card__link" href="">
+              <a class="product-card__link" href="/item.html">
                 <h3>Marble earrings</h3>
                 <p>$ 95</p>
                 <div class="product-card__img-wrapper product-card__img-wrapper--catalog">
@@ -440,25 +437,25 @@
           </li>
         </ul>
         <div class="catalog__pagination">
-          <a class="catalog__pagination-button" href="">Previous</a>
+          <a class="catalog__pagination-button" href="/blank.html">Previous</a>
           <ul class="catalog__pagination-list">
             <li class="catalog__pagination-list-element">
               <a class="catalog__pagination-list-link catalog__pagination-list-link--active">1</a>
             </li>
             <li class="catalog__pagination-list-element">
-              <a class="catalog__pagination-list-link" href="">2</a>
+              <a class="catalog__pagination-list-link" href="/blank.html">2</a>
             </li>
             <li class="catalog__pagination-list-element">
-              <a class="catalog__pagination-list-link" href="">3</a>
+              <a class="catalog__pagination-list-link" href="/blank.html">3</a>
             </li>
             <li class="catalog__pagination-list-element">
-              <a class="catalog__pagination-list-link" href="">4</a>
+              <a class="catalog__pagination-list-link" href="/blank.html">4</a>
             </li>
             <li class="catalog__pagination-list-element">
-              <a class="catalog__pagination-list-link" href="">5</a>
+              <a class="catalog__pagination-list-link" href="/blank.html">5</a>
             </li>
           </ul>
-          <a class="catalog__pagination-button catalog__pagination-button--next" href="">Next</a>
+          <a class="catalog__pagination-button catalog__pagination-button--next" href="/blank.html">Next</a>
         </div>
       </div>
     </section>
@@ -480,30 +477,30 @@
     <nav class="about-us-info">
       <ul class="about-us-list">
         <li class="about-us-list__element">
-          <a class="about-us-list__link" href="">Ordering & Payment</a>
+          <a class="about-us-list__link" href="/blank.html">Ordering & Payment</a>
         </li>
         <li class="about-us-list__element">
-          <a class="about-us-list__link" href="">Terms & Conditions</a>
+          <a class="about-us-list__link" href="/blank.html">Terms & Conditions</a>
         </li>
         <li class="about-us-list__element">
-          <a class="about-us-list__link" href="">Returns & Exchanges</a>
+          <a class="about-us-list__link" href="/blank.html">Returns & Exchanges</a>
         </li>
         <li class="about-us-list__element">
-          <a class="about-us-list__link" href="">Delivery</a>
+          <a class="about-us-list__link" href="/blank.html">Delivery</a>
         </li>
       </ul>
       <ul class="about-us-list about-us-list--middle">
         <li class="about-us-list__element">
-            <a class="about-us-list__link" href="">About CH</a>
+            <a class="about-us-list__link" href="/blank.html">About CH</a>
           </li>
           <li class="about-us-list__element">
-            <a class="about-us-list__link" href="">Stores & Hours</a>
+            <a class="about-us-list__link" href="/blank.html">Stores & Hours</a>
           </li>
           <li class="about-us-list__element">
-            <a class="about-us-list__link" href="">Jobs</a>
+            <a class="about-us-list__link" href="/blank.html">Jobs</a>
           </li>
           <li class="about-us-list__element">
-            <a class="about-us-list__link" href="">Contact Us</a>
+            <a class="about-us-list__link" href="/blank.html">Contact Us</a>
           </li>
       </ul>
     </nav>
@@ -511,7 +508,8 @@
       <h2 class="visually-hidden">Our socials</h2>
       <ul class="sm-list">
         <li class="sm-list__element">
-          <a class="sm-list__link" href="">
+          <a class="sm-list__link" href="/blank.html">
+            <span class="visually-hidden">Our Facebook</span>
             <svg class="sm-list__svg sm-list__svg--facebook" width="8" height="15">
               <use xlink:href="#icon-facebook"></use>
             </svg>
@@ -519,7 +517,8 @@
           </a>
         </li>
         <li class="sm-list__element">
-          <a class="sm-list__link" href="">
+          <a class="sm-list__link" href="/blank.html">
+            <span class="visually-hidden">Our Instagram</span>
             <svg class="sm-list__svg" width="15" height="15">
               <use xlink:href="#icon-instagram"></use>
             </svg>
@@ -527,7 +526,8 @@
           </a>
         </li>
         <li class="sm-list__element">
-          <a class="sm-list__link" href="">
+          <a class="sm-list__link" href="/blank.html">
+            <span class="visually-hidden">Our Pinterest</span>
             <svg class="sm-list__svg" width="15" height="15">
               <use xlink:href="#icon-pinterest"></use>
             </svg>
@@ -535,7 +535,8 @@
           </a>
         </li>
         <li class="sm-list__element">
-            <a class="sm-list__link sm-list__svg--twitter" href="">
+            <a class="sm-list__link sm-list__svg--twitter" href="/blank.html">
+              <span class="visually-hidden">Our Twitter</span>
               <svg class="sm-list__svg" width="15" height="13">
                 <use xlink:href="#icon-twitter"></use>
               </svg>
@@ -545,8 +546,36 @@
       </ul>
     </section>
   </footer>
-  <section class="modal modal--close">
-
+  <section class="login-modal login-modal--close">
+    <div class="login-modal__wrapper">
+        <div class="login-modal__promo">
+          <!-- 1х: 270px; 2x: 540px -->
+          <picture>
+            <source srcset="img/sweet-ice-cream-photography-unsplash.webp 1x, img/sweet-ice-cream-photography-unsplash@2x.webp 2x" type="image/webp">
+            <img src="img/sweet-ice-cream-photography-unsplash.jpg" srcset="img/sweet-ice-cream-photography-unsplash@2x.jpg 2x" loading="lazy" alt="Sweet ice cream photography unsplash" width="270" height="284">
+          </picture>
+        </div>
+        <h2>Log In</h2>
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="login-form__fieldset">
+            <div class="login-form__wrapper">
+              <label class="visually-hidden" for="modalEmail">Your E-mail</label>
+              <input id="modalEmail" name="modalEmail" type="email" placeholder="Your E-mail" required="">
+            </div>
+            <div class="login-form__wrapper">
+              <label class="visually-hidden" for="password">Password</label>
+              <input id="password" name="password" type="password" placeholder="Password" required="">
+              <a class="login-form__link" href="/blank.html">Forgot your password?</a>
+            </div>
+          </fieldset>
+          <button class="common-button login-form__submit" type="submit">Log In</button>
+        </form>
+        <button type="button" class="login-modal__close-button" name="close-modal" aria-label="Close pop-up"></button>
+        <div class="login-modal__link-wrapper">
+          <a class="login-form__link login-form__link--accaount" href="/blank.html">Don’t have an account?</a>
+          <a class="login-form__link login-form__link--signup" href="/blank.html">Sign up</a>
+        </div>
+    </div>
   </section>
   <script src="js/vendor.js"></script>
   <script src="js/script.js"></script>

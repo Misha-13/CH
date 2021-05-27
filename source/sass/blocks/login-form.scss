@@ -1,8 +1,8 @@
 .login-form {
   display: flex;
   flex-direction: column;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 45px;
+  padding-right: 45px;
 
   @media (max-width: $desktop-width) {
     padding-left: 51px;
@@ -18,7 +18,7 @@
 .login-form__fieldset {
   border: none;
   padding: 0;
-  margin-bottom: 10px;
+  margin-bottom: 35px;
 
   input {
     padding: 0;
@@ -27,7 +27,7 @@
     border: none;
     border-bottom: 1px solid $layout-black-lighter;
     width: 100%;
-    margin-bottom: 36px;
+    margin-bottom: 30px;
 
     &::placeholder {
       font-family: $default-font;
@@ -46,6 +46,10 @@
     &:active {
       opacity: 0.7;
     }
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 25px;
   }
 }
 
@@ -75,18 +79,6 @@
   }
 }
 
-.login-modal__link-wrapper {
-  position: absolute;
-  bottom: 50px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-
-  @media (max-width: $tablet-width) {
-    bottom: 35px;
-  }
-}
-
 .login-form__link--accaount {
   position: relative;
   right: auto;
@@ -107,6 +99,6 @@
 
 .login-form__submit {
   @media (max-width: $tablet-width) {
-    margin-top: 15px;
+    margin-top: 0;
   }
 }

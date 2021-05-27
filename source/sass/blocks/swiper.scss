@@ -3,6 +3,14 @@
   margin-top: -55px;
 }
 
+.swiper--item {
+  margin-top: -45px;
+
+  @media (max-width: $desktop-width) {
+    margin-top: -55px;
+  }
+}
+
 .swiper--no-js {
   display: none;
 }
@@ -12,7 +20,11 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-bottom: 95px;
+  margin-bottom: 91px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 75px;
+  }
 }
 
 .swiper__button {
@@ -39,6 +51,14 @@
   transform: rotate(180deg);
 }
 
+.swiper__button--item {
+  @media (max-width: $tablet-width) {
+    svg {
+      stroke: transparent;
+    }
+  }
+}
+
 .swiper__svg {
   width: 25px;
   height: 16px;
@@ -50,6 +70,7 @@
   width: 100%;
   height: max-content;
   margin-bottom: 60px;
+  margin-left: -10px;
 }
 
 .swiper__slide {

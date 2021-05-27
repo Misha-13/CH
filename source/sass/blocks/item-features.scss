@@ -4,7 +4,7 @@
 
   h3 {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-family: $extra-font;
     font-weight: bold;
     font-size: 34px;
@@ -16,7 +16,13 @@
     margin: 0;
     font-size: 26px;
     line-height: 34px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $tablet-width) {
+    p {
+      margin-bottom: 28px;
+    }
   }
 }
 
@@ -32,6 +38,10 @@
     font-size: 14px;
     line-height: 18px;
     color: $layout-black-lighter;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 35px;
   }
 }
 
@@ -67,6 +77,10 @@
   p:first-child {
     font-weight: 500;
   }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 14px;
+  }
 }
 
 .item-features__button {
@@ -76,6 +90,15 @@
   &:hover,
   &:active {
     padding: 22.5px;
+  }
+
+  @media (max-width: $tablet-width) {
+    &:focus,
+    &:hover,
+    &:active {
+      padding: 23px;
+    }
+    margin-bottom: 10px;
   }
 }
 
@@ -98,14 +121,14 @@
     }
   }
 
-  @media (max-width: 1023px) {
+  @media (max-width: $desktop-width) {
     p {
       font-size: 12px;
       line-height: 16px;
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $tablet-width) {
     p {
       width: 53px;
       text-align: center;

@@ -4,7 +4,7 @@
   align-items: center;
   padding-right: 98px;
   padding-left: 98px;
-  margin-bottom: 130px;
+  margin-bottom: 120px;
 
   h2 {
     font-family: $extra-font;
@@ -13,17 +13,17 @@
     line-height: 44px;
     color: $layout-black-lighter;
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
   }
 
   @media (max-width: $desktop-width) {
     padding-right: 45px;
     padding-left: 45px;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
   }
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 70px;
+    margin-bottom: 60px;
     padding-right: 15px;
     padding-left: 15px;
   }
@@ -37,7 +37,7 @@
   line-height: 21px;
   color: $layout-black-lighter;
   border-bottom: 1px solid $layout-brown;
-  margin-bottom: 60px;
+  margin-bottom: 65px;
 
   &:active {
     opacity: 0.7;
@@ -46,5 +46,9 @@
   &:focus,
   &:hover {
     border-bottom: 1px solid $layout-black-lighter;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 53px;
   }
 }

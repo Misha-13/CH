@@ -1,22 +1,26 @@
 .promo {
   display: flex;
   justify-content: center;
-  margin-bottom: 130px;
+  margin-bottom: 120px;
 
   @media (max-width: $desktop-width) {
-    margin-bottom: 80px;
+    margin-bottom: 70px;
   }
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 70px;
+    margin-bottom: 60px;
   }
 }
 
 .promo--catalog {
   margin-bottom: 80px;
 
+  @media (max-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
+
   @media (max-width: $tablet-width) {
-    margin-bottom: 40px;
+    margin-bottom: 39px;
   }
 }
 
@@ -57,7 +61,7 @@
     line-height: 58px;
     color: $layout-white;
     margin: 0;
-    margin-bottom: 20px;
+    margin-top: 20px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
   }
@@ -71,6 +75,20 @@
     color: $layout-white;
     margin: 0;
     margin-bottom: 20px;
+  }
+
+  @media (max-width: $desktop-width) {
+    h2 {
+      margin-top: 25px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    h2 {
+      margin-top: 15px;
+      font-size: 38px;
+      line-height: 49px;
+    }
   }
 }
 

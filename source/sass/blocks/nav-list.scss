@@ -9,23 +9,31 @@
   @media (max-width: $desktop-width) {
     flex-direction: column;
     padding: 0;
-    margin-top: 55px;
-    margin-bottom: 55px;
+    margin-top: 40px;
+    margin-bottom: 45px;
   }
 
   @media (max-width: $tablet-width) {
-    margin-top: 45px;
-    margin-bottom: 45px;
+    margin-top: 35px;
+    margin-bottom: 30px;
   }
 }
 
 .nav-list__element {
-  margin-left: 17px;
-  margin-right: 17px;
+  margin-left: 16px;
+  margin-right: 16px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   @media (max-width: $desktop-width) {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 
     &:last-child {
       margin-bottom: 0;

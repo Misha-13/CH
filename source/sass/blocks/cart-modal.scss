@@ -47,14 +47,29 @@
       font-size: 24px;
       line-height: 29px;
       margin-bottom: 40px;
-      padding-left: 15px;
-      padding-right: 15px;
+      padding-left: 45px;
+      padding-right: 45px;
+    }
+  }
+
+  @media (max-width: $desktop-width) {
+    margin-top: 260px;
+    padding-top: 45px;
+
+    h2 {
+      margin-bottom: 45px;
     }
   }
 
   @media (max-width: $tablet-width) {
     width: 290px;
     min-height: 520px;
+    margin-top: 120px;
+    padding-top: 35px;
+
+    h2 {
+      margin-bottom: 35px;
+    }
   }
 }
 
@@ -143,10 +158,17 @@
     color: $layout-black-lighter;
   }
 
+  @media (max-width: $desktop-width) {
+    h3 {
+      margin-top: -5px;
+    }
+  }
+
   @media (max-width: $tablet-width) {
     h3 {
       font-size: 16px;
       line-height: 21px;
+      margin-bottom: 5px;
     }
 
     p {
@@ -171,7 +193,7 @@
 }
 
 .cart-modal__counter-button {
-  display: block;
+  display: flex;
   padding: 0;
   margin: 0;
   border: none;
@@ -256,7 +278,7 @@
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
-    padding-top: 25px;
+    padding-top: 17px;
     padding-left: 15px;
     padding-right: 15px;
 

@@ -2,33 +2,34 @@
   display: grid;
   grid-template-columns: 1.28fr 1fr;
   column-gap: 100px;
-  padding-top: 100px;
+  padding-top: 80px;
   padding-left: 98px;
   padding-right: 98px;
   padding-bottom: 0;
-  margin-bottom: 130px;
+  margin-bottom: 120px;
   border-top: 1px solid $layout-white-darker;
 
   @media (max-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
     column-gap: 40px;
-    padding-top: 60px;
+    padding-top: 30px;
     padding-left: 45px;
     padding-right: 45px;
-    margin-bottom: 80px;
+    margin-bottom: 65px;
   }
 
   @media (max-width: $tablet-width) {
     grid-template-columns: 1fr;
-    padding-top: 20px;
+    padding-top: 0;
     padding-left: 15px;
     padding-right: 15px;
-    margin-bottom: 70px;
+    margin-bottom: 55px;
   }
 }
 
 .item-description__features {
   padding-right: 21%;
+  margin-top: -10px;
 
   @media (max-width: $desktop-width) {
     padding-right: 0;

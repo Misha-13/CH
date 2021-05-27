@@ -70,7 +70,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding-top: 71px;
   background-color: $layout-grey-lighter;
 
   h3 {
@@ -82,8 +82,8 @@
     text-align: center;
     color: $layout-black;
     margin: 0;
-    margin-top: 25px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 35px;
   }
 
   p {
@@ -93,8 +93,11 @@
     line-height: 18px;
     color: $layout-grey;
     margin: 0;
-    margin-top: 10px;
     order: -1;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 45px;
   }
 }
 
@@ -107,6 +110,7 @@
   color: $layout-black-lighter;
   border-bottom: 1px solid $layout-brown;
   margin-bottom: 10px;
+  padding-bottom: 5px;
 
   &:active {
     opacity: 0.7;
@@ -120,6 +124,7 @@
 
 .preview-article__info-wrapper--big {
   position: absolute;
+  box-sizing: border-box;
   bottom: 0;
   right: 0;
   width: 285px;

@@ -79,24 +79,6 @@
   }
 }
 
-.login-form__link--accaount {
-  position: relative;
-  right: auto;
-  bottom: auto;
-  font-size: 14px;
-  line-height: 21px;
-  margin-right: 5px;
-}
-
-.login-form__link--signup {
-  position: relative;
-  right: auto;
-  bottom: auto;
-  font-size: 14px;
-  line-height: 21px;
-  color: $layout-black-lighter;
-}
-
 .login-form__submit {
   @media (max-width: $tablet-width) {
     margin-top: 0;

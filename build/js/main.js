@@ -2,6 +2,7 @@
 
 (function () {
   var initSlider = function () {
+    var lintSwiper = '';
     var newItemsBlock = document.querySelector('.new-items--no-js');
     var swiperBlock = document.querySelector('.swiper--no-js');
 
@@ -78,6 +79,12 @@
         }
       }
     });
+
+    lintSwiper = swiper;
+    lintSwiper = false;
+    if (lintSwiper) {
+      lintSwiper = true;
+    }
   };
 
   window.slider = {

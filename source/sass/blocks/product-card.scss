@@ -63,7 +63,7 @@
 
 .product-card__link--catalog {
   h3 {
-    margin-top: 15px;
+    margin-top: 20px;
   }
 }
 
@@ -75,7 +75,8 @@
 
   img {
     display: block;
-    height: 284px;
+    /* height: 284px; */
+    height: 100%;
     object-fit: cover;
   }
 

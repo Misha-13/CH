@@ -4,7 +4,8 @@
   align-items: center;
   padding-right: 198px;
   padding-left: 198px;
-  margin-bottom: 108px;
+  /* margin-bottom: 108px; */
+  margin-bottom: 100px;
 
   h2 {
     font-family: $extra-font;
@@ -13,7 +14,8 @@
     line-height: 44px;
     color: $layout-black-lighter;
     margin: 0;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
+    margin-bottom: 50px;
     text-align: center;
     letter-spacing: 0.03em;
   }
@@ -21,7 +23,8 @@
   @media (max-width: $desktop-width) {
     padding-right: 45px;
     padding-left: 45px;
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
+    margin-bottom: 70px;
   }
 
   @media (max-width: $tablet-width) {

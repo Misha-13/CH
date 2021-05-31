@@ -6,8 +6,10 @@
 
 .faq-list__element {
   position: relative;
-  padding-top: 30px;
-  padding-bottom: 50px;
+  /* padding-top: 30px; */
+  padding-top: 40px;
+  /* padding-bottom: 50px; */
+  padding-bottom: 45px;
   padding-left: 45px;
   padding-right: 75px;
   border-bottom: 1px solid $layout-brown;
@@ -54,13 +56,19 @@
     padding-right: 50px;
 
     h3 {
+      box-sizing: border-box;
       font-size: 16px;
       line-height: 22px;
-      width: 187px;
+      /* width: 187px; */
+      width: 100%;
+      padding-right: 30px;
     }
 
     p {
-      width: 205px;
+      /* width: 205px; */
+      box-sizing: border-box;
+      width: 100%;
+      padding-right: 10px;
       font-size: 14px;
       line-height: 20px;
       margin-top: 15px;
@@ -84,7 +92,8 @@
 .faq-list__link {
   position: absolute;
   display: block;
-  top: 35px;
+  /* top: 35px; */
+  top: 40px;
   right: 50px;
 
   &:hover,
@@ -116,9 +125,15 @@
 
 .faq-list__svg {
   width: 15px;
-  height: 8px;
+  /* height: 8px; */
+  height: 15px;
   fill: transparent;
   stroke: $layout-brown;
+
+  @media (max-width: $desktop-width) {
+    width: 25px;
+    height: 20px;
+  }
 
   @media (max-width: $tablet-width) {
     width: 20px;

@@ -138,10 +138,12 @@
       for (var i = 0; i < loginButton.length; i++) {
         loginButton[i].addEventListener('click', function (evt) {
           var modal = document.querySelector('.login-modal');
+          var body = document.querySelector('.page-body');
           if (modal) {
             evt.preventDefault();
             if (modal.classList.contains('login-modal--close')) {
               modal.classList.remove('login-modal--close');
+              body.classList.add('page-body--modal');
             }
           }
         });
@@ -203,6 +205,7 @@
   if (loginModal) {
     var loginModalEmail = document.querySelector('#modalEmail');
     var closeModal = loginModal.querySelector('.login-modal__close-button');
+    var body = document.querySelector('.page-body');
 
     var setStorageValue = function () {
       localStorage.setItem('modalEmail', loginModalEmail.value);
@@ -216,12 +219,14 @@
       closeModal.addEventListener('click', function () {
         setStorageValue();
         loginModal.classList.add('login-modal--close');
+        body.classList.remove('page-body--modal');
       });
 
       window.addEventListener('keydown', function (evt) {
         if (evt.keyCode === ESC_KEY_CODE) {
           setStorageValue();
           loginModal.classList.add('login-modal--close');
+          body.classList.remove('page-body--modal');
         }
       });
 
@@ -229,6 +234,7 @@
         if (evt.target === loginModal) {
           setStorageValue();
           loginModal.classList.add('login-modal--close');
+          body.classList.remove('page-body--modal');
         }
       });
     };
@@ -309,26 +315,31 @@
     var cartAddButton = document.querySelector('.item-features__button');
     var closeModal = cartModal.querySelector('.cart-modal__close-button');
     var continueModal = cartModal.querySelector('.cart-modal__button--js-continue');
+    var body = document.querySelector('.page-body');
 
     var setModalEvent = function () {
       closeModal.addEventListener('click', function () {
         cartModal.classList.add('cart-modal--close');
+        body.classList.remove('page-body--modal');
       });
 
       continueModal.addEventListener('click', function (evt) {
         evt.preventDefault();
         cartModal.classList.add('cart-modal--close');
+        body.classList.remove('page-body--modal');
       });
 
       window.addEventListener('keydown', function (evt) {
         if (evt.keyCode === ESC_KEY_CODE) {
           cartModal.classList.add('cart-modal--close');
+          body.classList.remove('page-body--modal');
         }
       });
 
       window.addEventListener('click', function (evt) {
         if (evt.target === cartModal) {
           cartModal.classList.add('cart-modal--close');
+          body.classList.remove('page-body--modal');
         }
       });
     };
@@ -338,6 +349,7 @@
         cartAddButton.addEventListener('click', function (evt) {
           evt.preventDefault();
           cartModal.classList.toggle('cart-modal--close');
+          body.classList.toggle('page-body--modal');
         });
       }
     };

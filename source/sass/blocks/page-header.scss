@@ -37,7 +37,7 @@
     }
   }
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $tablet-width) {
     padding-bottom: 15px;
   }
 }
@@ -107,6 +107,14 @@
   flex-wrap: wrap;
   padding-top: 10px;
   margin-left: 10px;
+
+  /* & a {
+    margin-right: 35px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  } */
 
   @media (max-width: $desktop-width) {
     width: auto;

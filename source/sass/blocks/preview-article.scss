@@ -133,7 +133,7 @@
   @media (max-width: $desktop-width) {
     position: unset;
     width: auto;
-    min-height: none;
+    min-height: unset;
   }
 }
 

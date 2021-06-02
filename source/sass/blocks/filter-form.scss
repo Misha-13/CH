@@ -191,6 +191,7 @@
     line-height: 18px;
     color: $layout-black-lighter;
     padding-left: 25px;
+    cursor: pointer;
 
     &::before {
       content: "";
@@ -212,7 +213,13 @@
   }
 
   input {
-    display: none;
+    /* display: none; */
+    /* width: 0;
+    height: 0; */
+
+    &:focus + label {
+      outline: 1px dotted $layout-brown;
+    }
 
     &:checked + label::before {
       background-color: $layout-brown;

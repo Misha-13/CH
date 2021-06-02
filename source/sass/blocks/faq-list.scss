@@ -9,7 +9,8 @@
   /* padding-top: 30px; */
   padding-top: 40px;
   /* padding-bottom: 50px; */
-  padding-bottom: 45px;
+  /* padding-bottom: 45px; */
+  padding-bottom: 70px;
   padding-left: 45px;
   padding-right: 75px;
   border-bottom: 1px solid $layout-brown;
@@ -36,7 +37,8 @@
     line-height: 21px;
     color: $layout-black-lighter;
     margin: 0;
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    margin-top: 30px;
     padding-left: 5px;
   }
 
@@ -45,14 +47,17 @@
 
     p {
       width: 530px;
-      margin-top: 30px;
+      /* margin-top: 30px; */
+      margin-top: 50px;
+      padding-left: 0;
     }
   }
 
   @media (max-width: $tablet-width) {
     padding-left: 25px;
     padding-top: 15px;
-    padding-bottom: 19px;
+    /* padding-bottom: 19px; */
+    padding-bottom: 65px;
     padding-right: 50px;
 
     h3 {
@@ -71,15 +76,22 @@
       padding-right: 10px;
       font-size: 14px;
       line-height: 20px;
-      margin-top: 15px;
+      /* margin-top: 15px; */
+      margin-top: 55px;
       padding-left: 0;
     }
   }
 }
 
 .faq-list__element--selected {
+  padding-bottom: 45px;
+
   p {
     display: block;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 20px;
   }
 }
 
@@ -90,11 +102,21 @@
 }
 
 .faq-list__link {
+  /* position: absolute; */
+  text-decoration: none;
+  box-sizing: border-box;
   position: absolute;
+  left: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  top: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 100%;
   display: block;
   /* top: 35px; */
-  top: 40px;
-  right: 50px;
+  /* top: 40px;
+  right: 50px; */
 
   &:hover,
   &:focus {
@@ -109,14 +131,32 @@
     }
   }
 
+  @media (max-width: $desktop-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   @media (max-width: $tablet-width) {
-    top: 25px;
-    right: 25px;
+    /* top: 25px;
+    right: 25px; */
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
 .faq-list__link--selected {
-  transform: rotate(180deg);
+  /* transform: rotate(180deg); */
+
+  .faq-list__svg {
+    transform: rotate(180deg);
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 20px;
+    padding-top: 13px;
+  }
 }
 
 .faq-list__link--no-js {
@@ -130,6 +170,10 @@
   fill: transparent;
   stroke: $layout-brown;
 
+  position: absolute;
+  top: 40px;
+  right: 50px;
+
   @media (max-width: $desktop-width) {
     width: 25px;
     height: 20px;
@@ -138,5 +182,8 @@
   @media (max-width: $tablet-width) {
     width: 20px;
     height: 10px;
+
+    top: 20px;
+    right: 25px;
   }
 }

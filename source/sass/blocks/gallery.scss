@@ -1,20 +1,13 @@
 .gallery {
   @include clear-lists-style;
   display: grid;
-  /* grid-template-columns: 1fr 400px 1fr 1fr;
-  grid-template-rows: 230px 150px;
-  gap: 27px; */
   grid-template-columns: 1fr 34% 1fr 1fr;
   grid-template-rows: 34% 22%;
   column-gap: 27px;
   row-gap: 35px;
-  /* max-width: 1170px; */
   margin-bottom: -22.5%;
 
   @media (max-width: $desktop-width) {
-    /* grid-template-columns: 1fr 231px 1fr 1fr;
-    grid-template-rows: 133px 87px;
-    gap: 0; */
     column-gap: 16px;
     row-gap: 21px;
   }
@@ -22,7 +15,6 @@
   @media (max-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 26% 17% 17%;
-    /* gap: 0; */
     margin-bottom: -51%;
     column-gap: 24px;
     row-gap: 27px;

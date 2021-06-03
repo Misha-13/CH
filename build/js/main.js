@@ -260,6 +260,7 @@
 (function () {
   var DESKTOP_WIDTH = 1024;
   var filterForm = document.querySelector('.filter-form');
+  var body = document.querySelector('.page-body');
 
   if (filterForm) {
     var filterCloseButton = filterForm.querySelector('.filter-form__close-button');
@@ -282,18 +283,25 @@
 
     var initFilter = function () {
       var filterOpenButton = document.querySelector('.catalog__filter-button');
+      var filterBlock = document.querySelector('.catalog__form-wrapper');
       if (filterOpenButton) {
         filterOpenButton.classList.remove('catalog__filter-button--no-js');
         filterOpenButton.addEventListener('click', function (evt) {
           evt.preventDefault();
           filterForm.classList.toggle('filter-form--open');
+          filterBlock.classList.toggle('catalog__form-wrapper--active');
+          body.classList.toggle('page-body--filter');
         });
         filterCloseButton.addEventListener('click', function () {
           filterForm.classList.remove('filter-form--open');
+          filterBlock.classList.toggle('catalog__form-wrapper--active');
+          body.classList.remove('page-body--filter');
         });
         window.addEventListener('resize', function () {
           if (window.innerWidth > DESKTOP_WIDTH) {
             filterForm.classList.remove('filter-form--open');
+            filterBlock.classList.toggle('catalog__form-wrapper--active');
+            body.classList.remove('page-body--filter');
           }
         });
       }
@@ -317,17 +325,11 @@
   if (cartModal) {
     var cartAddButton = document.querySelector('.item-features__button');
     var closeModal = cartModal.querySelector('.cart-modal__close-button');
-    var continueModal = cartModal.querySelector('.cart-modal__button--js-continue');
+
     var body = document.querySelector('.page-body');
 
     var setModalEvent = function () {
       closeModal.addEventListener('click', function () {
-        cartModal.classList.add('cart-modal--close');
-        body.classList.remove('page-body--modal');
-      });
-
-      continueModal.addEventListener('click', function (evt) {
-        evt.preventDefault();
         cartModal.classList.add('cart-modal--close');
         body.classList.remove('page-body--modal');
       });

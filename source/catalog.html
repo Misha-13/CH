@@ -150,107 +150,109 @@
     </section>
     <section class="catalog">
       <h2 class="visually-hidden">Items list</h2>
-      <form action="https://echo.htmlacademy.ru" method="GET" class="filter-form">
-        <button class="filter-form__close-button" type="button">
-          <svg class="filter-form__svg-close" width="32" height="32">
-            <use xlink:href="#icon-round-close"></use>
-          </svg>
-        </button>
-        <fieldset class="filter-form__fieldset">
-          <h3>Product</h3>
-          <a class="filter-form__restore-button filter-form__restore-button--clicked filter-form__restore-button--no-js" href="#">
-            <p>Restore button</p>
-            <svg class="filter-form__svg" width="15" height="8">
-              <use xlink:href="#icon-arrow-down"></use>
+      <div class="catalog__form-wrapper">
+        <form action="https://echo.htmlacademy.ru" method="GET" class="filter-form">
+          <button class="filter-form__close-button" type="button">
+            <svg class="filter-form__svg-close" width="32" height="32">
+              <use xlink:href="#icon-round-close"></use>
             </svg>
-          </a>
-          <ul class="filter-form__list filter-form__list--no-js">
-            <li class="filter-form__list-element">
-              <input class="visually-hidden" type="checkbox" name="necklaces" id="necklaces" checked="">
-              <label for="necklaces">Necklaces</label>
-            </li>
-            <li class="filter-form__list-element">
-              <input class="visually-hidden" type="checkbox" name="chokers" id="chokers" checked="">
-              <label for="chokers" >Chokers</label>
-            </li>
-            <li class="filter-form__list-element">
-              <input class="visually-hidden" type="checkbox" name="rings" id="rings">
-              <label for="rings" >Rings</label>
-            </li>
-            <li class="filter-form__list-element">
-              <input class="visually-hidden" type="checkbox" name="earrings" id="earrings" checked="">
-              <label for="earrings" >Earrings</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="filter-form__fieldset">
-          <h3>Material</h3>
-          <a class="filter-form__restore-button filter-form__restore-button--no-js" href="#">
-            <p>Restore button</p>
-            <svg class="filter-form__svg" width="15" height="8">
-              <use xlink:href="#icon-arrow-down"></use>
-            </svg>
-          </a>
-          <ul class="filter-form__list filter-form__list--closed filter-form__list--no-js">
-            <li class="filter-form__list-element">
-              <input class="visually-hidden" type="checkbox" name="gold" id="gold" checked="">
-              <label for="gold" >Gold</label>
-            </li>
-            <li class="filter-form__list-element">
-              <input class="visually-hidden" type="checkbox" name="silver" id="silver" checked="">
-              <label for="silver" >Silver</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="filter-form__fieldset">
-          <h3>Collection</h3>
-          <a class="filter-form__restore-button filter-form__restore-button--no-js" href="#">
-            <p>Restore button</p>
-            <svg class="filter-form__svg" width="15" height="8">
-              <use xlink:href="#icon-arrow-down"></use>
-            </svg>
-          </a>
-          <ul class="filter-form__list filter-form__list--closed filter-form__list--no-js">
-            <li class="filter-form__list-element">
-              <input class="visually-hidden" type="checkbox" name="pink-flamingo" id="pink-flamingo" checked="">
-              <label for="pink-flamingo" >Pink flamingo</label>
-            </li>
-            <li class="filter-form__list-element">
-              <input class="visually-hidden" type="checkbox" name="dreams" id="dreams" checked="">
-              <label for="dreams" >Dreams</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="filter-form__fieldset">
-          <h3>Price</h3>
-          <a class="filter-form__restore-button filter-form__restore-button--clicked filter-form__restore-button--no-js" href="#">
-            <p>Restore button</p>
-            <svg class="filter-form__svg" width="15" height="8">
-              <use xlink:href="#icon-arrow-down"></use>
-            </svg>
-          </a>
-          <div class="filter-form__list filter-form__list--no-js">
-            <div class="price-slider">
-              <div class="price-slider__line price-slider__line--low">
-                <label for="low-price">$ 55 </label>
-                <input type="text" name="low-price" id="low-price" value="55" tabindex="13">
-              </div>
-              <div class="price-slider__line price-slider__line--middle">
-                <span class="price-slider__pin price-slider__pin--low"></span>
-                <span class="price-slider__pin price-slider__pin--top"></span>
-              </div>
-              <div class="price-slider__line price-slider__line--top">
-                <label for="top-price">$ 155</label>
-                <input type="text" name="top-price" id="top-price" value="155" tabindex="14">
+          </button>
+          <fieldset class="filter-form__fieldset">
+            <h3>Product</h3>
+            <a class="filter-form__restore-button filter-form__restore-button--clicked filter-form__restore-button--no-js" href="#">
+              <p>Restore button</p>
+              <svg class="filter-form__svg" width="15" height="8">
+                <use xlink:href="#icon-arrow-down"></use>
+              </svg>
+            </a>
+            <ul class="filter-form__list filter-form__list--no-js">
+              <li class="filter-form__list-element">
+                <input class="visually-hidden" type="checkbox" name="necklaces" id="necklaces" checked="">
+                <label for="necklaces">Necklaces</label>
+              </li>
+              <li class="filter-form__list-element">
+                <input class="visually-hidden" type="checkbox" name="chokers" id="chokers" checked="">
+                <label for="chokers" >Chokers</label>
+              </li>
+              <li class="filter-form__list-element">
+                <input class="visually-hidden" type="checkbox" name="rings" id="rings">
+                <label for="rings" >Rings</label>
+              </li>
+              <li class="filter-form__list-element">
+                <input class="visually-hidden" type="checkbox" name="earrings" id="earrings" checked="">
+                <label for="earrings" >Earrings</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-form__fieldset">
+            <h3>Material</h3>
+            <a class="filter-form__restore-button filter-form__restore-button--no-js" href="#">
+              <p>Restore button</p>
+              <svg class="filter-form__svg" width="15" height="8">
+                <use xlink:href="#icon-arrow-down"></use>
+              </svg>
+            </a>
+            <ul class="filter-form__list filter-form__list--closed filter-form__list--no-js">
+              <li class="filter-form__list-element">
+                <input class="visually-hidden" type="checkbox" name="gold" id="gold" checked="">
+                <label for="gold" >Gold</label>
+              </li>
+              <li class="filter-form__list-element">
+                <input class="visually-hidden" type="checkbox" name="silver" id="silver" checked="">
+                <label for="silver" >Silver</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-form__fieldset">
+            <h3>Collection</h3>
+            <a class="filter-form__restore-button filter-form__restore-button--no-js" href="#">
+              <p>Restore button</p>
+              <svg class="filter-form__svg" width="15" height="8">
+                <use xlink:href="#icon-arrow-down"></use>
+              </svg>
+            </a>
+            <ul class="filter-form__list filter-form__list--closed filter-form__list--no-js">
+              <li class="filter-form__list-element">
+                <input class="visually-hidden" type="checkbox" name="pink-flamingo" id="pink-flamingo" checked="">
+                <label for="pink-flamingo" >Pink flamingo</label>
+              </li>
+              <li class="filter-form__list-element">
+                <input class="visually-hidden" type="checkbox" name="dreams" id="dreams" checked="">
+                <label for="dreams" >Dreams</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-form__fieldset">
+            <h3>Price</h3>
+            <a class="filter-form__restore-button filter-form__restore-button--clicked filter-form__restore-button--no-js" href="#">
+              <p>Restore button</p>
+              <svg class="filter-form__svg" width="15" height="8">
+                <use xlink:href="#icon-arrow-down"></use>
+              </svg>
+            </a>
+            <div class="filter-form__list filter-form__list--no-js">
+              <div class="price-slider">
+                <div class="price-slider__line price-slider__line--low">
+                  <label for="low-price">$ 55 </label>
+                  <input type="text" name="low-price" id="low-price" value="55" tabindex="13">
+                </div>
+                <div class="price-slider__line price-slider__line--middle">
+                  <span class="price-slider__pin price-slider__pin--low"></span>
+                  <span class="price-slider__pin price-slider__pin--top"></span>
+                </div>
+                <div class="price-slider__line price-slider__line--top">
+                  <label for="top-price">$ 155</label>
+                  <input type="text" name="top-price" id="top-price" value="155" tabindex="14">
+                </div>
               </div>
             </div>
-          </div>
-        </fieldset>
-        <button type="submit" class="common-button filter-form__button">Apply</button>
-        <button type="reset" class="common-button common-button--reversed filter-form__button">Clear All</button>
-      </form>
+          </fieldset>
+          <button type="submit" class="common-button filter-form__button">Apply</button>
+          <button type="reset" class="common-button common-button--reversed filter-form__button">Clear All</button>
+        </form>
+      </div>
       <div class="catalog__items-wrapper">
-        <a class="common-button catalog__filter-button catalog__filter-button--no-js" href="#">Filter</a>
+        <a class="common-button catalog__filter-button catalog__filter-button--no-js" href="filter.html">Filter</a>
         <ul class="items-list">
           <li class="items-list__element">
             <article class="product-card">

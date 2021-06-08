@@ -18,16 +18,18 @@
 .login-form__fieldset {
   border: none;
   padding: 0;
-  margin-bottom: 35px;
+  margin: 0;
+  margin-bottom: 42px;
 
   input {
     padding: 0;
-    padding-bottom: 9px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid $layout-black-lighter;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
 
     &::placeholder {
       font-family: $default-font;
@@ -49,7 +51,11 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+
+    input {
+      margin-bottom: 25px;
+    }
   }
 }
 
@@ -60,7 +66,7 @@
 .login-form__link {
   position: absolute;
   right: 0;
-  bottom: 10px;
+  bottom: 6px;
   text-decoration: none;
   font-family: $default-font;
   font-weight: 500;
@@ -80,6 +86,8 @@
 }
 
 .login-form__submit {
+  margin-top: -3px;
+
   @media (max-width: $tablet-width) {
     margin-top: 0;
   }

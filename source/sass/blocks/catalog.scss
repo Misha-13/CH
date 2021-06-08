@@ -130,10 +130,10 @@
 .catalog__form-wrapper {
   @media (max-width: $desktop-width) {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    height: 85vh;
+    height: 100%;
     width: 100%;
     z-index: -5;
     overflow: scroll;
@@ -143,6 +143,6 @@
 .catalog__form-wrapper--active {
   @media (max-width: $desktop-width) {
     display: block;
-    z-index: auto;
+    z-index: 9999;
   }
 }

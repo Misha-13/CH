@@ -2,7 +2,6 @@
 
 (function () {
   var initSlider = function () {
-    /* var lintSwiper = ''; */
     var newItemsBlock = document.querySelector('.new-items--no-js');
     var swiperBlock = document.querySelector('.swiper--no-js');
 
@@ -44,16 +43,6 @@
             }
           }
         },
-        /* 600: {
-          slidesPerView: 3,
-          slidesPerGroup: 3,
-          pagination: {
-            type: 'fraction',
-            renderFraction: function (currentClass, totalClass) {
-              return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
-            }
-          }
-        }, */
         768: {
           slidesPerView: 2,
           slidesPerGroup: 2,
@@ -80,11 +69,6 @@
       }
     });
 
-    /* lintSwiper = swiper;
-    lintSwiper = false;
-    if (lintSwiper) {
-      lintSwiper = true;
-    } */
     window.addEventListener('resize', function () {
       swiper.update();
     });

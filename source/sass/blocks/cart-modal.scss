@@ -107,6 +107,16 @@
     border-radius: 5px;
     transform: rotate(45deg);
   }
+
+  @media (max-width: $desktop-width) {
+    top: 16px;
+    right: 16px;
+  }
+
+  @media (max-width: $tablet-width) {
+    top: 10px;
+    right: 11px;
+  }
 }
 
 .cart-modal__item-wrapper {
@@ -194,7 +204,6 @@
 }
 
 .cart-modal__counter-button {
-  display: flex;
   padding: 0;
   margin: 0;
   border: none;
@@ -243,7 +252,19 @@
 
 .cart-modal__counter-button--minus {
   position: relative;
-  height: 2px;
+  width: 14px;
+  padding-bottom: 1px;
+  padding-top: 1px;
+  background-color: $layout-grey;
+
+  &:hover,
+  &:focus {
+    background-color: $layout-brown;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 }
 
 .cart-modal__svg {
